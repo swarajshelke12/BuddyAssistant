@@ -7,3 +7,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-09-25 14:09:52`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2025-09-25 22:33:30`: perf: reduce wake word latency by caching audio buffers
 - `2025-09-29 22:45:06`: feat(logging): add structured debug logger for speech recognition events
+- `2025-09-29 14:00:52`: feat(launcher): support browser URL and desktop shortcut routing
