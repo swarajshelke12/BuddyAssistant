@@ -9,3 +9,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-09-29 22:45:06`: feat(logging): add structured debug logger for speech recognition events
 - `2025-09-29 14:00:52`: feat(launcher): support browser URL and desktop shortcut routing
 - `2025-09-30 20:58:41`: chore: clean up deprecated audio helper functions
+- `2025-09-30 12:02:19`: docs: document system architecture and execution flow in technical notes
