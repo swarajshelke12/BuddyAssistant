@@ -12,3 +12,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-09-30 12:02:19`: docs: document system architecture and execution flow in technical notes
 - `2025-10-01 12:16:39`: refactor(parser): improve multi-intent compound command tokenization
 - `2025-10-01 12:40:08`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2025-10-02 21:21:01`: feat(stt): implement energy threshold auto-calibration for noisy rooms
