@@ -19,3 +19,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-03 20:09:46`: fix(safety): enforce critical system process protection blacklist
 - `2025-10-07 12:18:11`: refactor: extract command execution into dedicated dispatcher module
 - `2025-10-07 15:05:02`: refactor(ui): streamline terminal status feedback and color logging
+- `2025-10-07 17:36:53`: docs: update project roadmap and supported voice command catalog
