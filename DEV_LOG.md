@@ -17,3 +17,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-03 10:13:09`: test: mock microphone input stream for automated CI test suite
 - `2025-10-03 10:35:30`: test: mock microphone input stream for automated CI test suite
 - `2025-10-03 20:09:46`: fix(safety): enforce critical system process protection blacklist
+- `2025-10-07 12:18:11`: refactor: extract command execution into dedicated dispatcher module
