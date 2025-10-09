@@ -21,3 +21,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-07 15:05:02`: refactor(ui): streamline terminal status feedback and color logging
 - `2025-10-07 17:36:53`: docs: update project roadmap and supported voice command catalog
 - `2025-10-09 12:26:02`: fix(listener): handle ambient noise calibration timeout gracefully
+- `2025-10-09 21:36:26`: docs: add voice command shortcuts and wake-word configuration guide
