@@ -25,3 +25,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-13 20:24:47`: perf: optimize fuzzy matching index for installed Windows applications
 - `2025-10-13 20:10:59`: refactor: extract command execution into dedicated dispatcher module
 - `2025-10-13 10:31:34`: feat(automation): integrate Windows task management and app discovery
+- `2025-10-13 16:30:59`: perf: optimize regex pattern compilation in voice parser
