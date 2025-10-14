@@ -27,3 +27,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-13 10:31:34`: feat(automation): integrate Windows task management and app discovery
 - `2025-10-13 16:30:59`: perf: optimize regex pattern compilation in voice parser
 - `2025-10-14 21:39:01`: docs: add voice command shortcuts and wake-word configuration guide
+- `2025-10-14 20:01:06`: feat(metrics): track command execution latency and recognition accuracy
