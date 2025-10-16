@@ -34,3 +34,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-16 16:27:05`: style: format imports and docstrings according to PEP8 standards
 - `2025-10-16 20:25:09`: refactor(core): modularize listener loop and session timeout handler
 - `2025-10-16 22:08:00`: test: mock microphone input stream for automated CI test suite
+- `2025-10-16 11:13:10`: fix(hotkey): resolve keyboard listener conflict on background threads
