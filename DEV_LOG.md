@@ -31,3 +31,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-14 22:26:25`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
 - `2025-10-14 16:06:52`: chore(deps): bump pyaudio and speechrecognition dependencies
 - `2025-10-15 17:19:58`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
+- `2025-10-16 16:27:05`: style: format imports and docstrings according to PEP8 standards
