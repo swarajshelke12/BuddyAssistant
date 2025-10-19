@@ -41,3 +41,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-17 22:14:05`: feat(metrics): track command execution latency and recognition accuracy
 - `2025-10-19 17:11:41`: refactor(parser): improve multi-intent compound command tokenization
 - `2025-10-19 22:08:54`: perf: optimize fuzzy matching index for installed Windows applications
+- `2025-10-19 16:44:25`: refactor(parser): improve multi-intent compound command tokenization
