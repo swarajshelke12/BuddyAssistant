@@ -42,3 +42,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-19 17:11:41`: refactor(parser): improve multi-intent compound command tokenization
 - `2025-10-19 22:08:54`: perf: optimize fuzzy matching index for installed Windows applications
 - `2025-10-19 16:44:25`: refactor(parser): improve multi-intent compound command tokenization
+- `2025-10-20 11:22:49`: feat(launcher): support browser URL and desktop shortcut routing
