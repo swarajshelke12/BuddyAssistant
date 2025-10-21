@@ -46,3 +46,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-20 16:43:24`: refactor: extract command execution into dedicated dispatcher module
 - `2025-10-21 14:55:58`: refactor(core): modularize listener loop and session timeout handler
 - `2025-10-21 12:55:02`: feat(agent): add support for chained multi-action query execution
+- `2025-10-21 15:41:24`: chore(deps): bump pyaudio and speechrecognition dependencies
