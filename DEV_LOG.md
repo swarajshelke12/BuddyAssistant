@@ -51,3 +51,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-23 18:14:47`: docs: add troubleshooting steps for microphone access permissions
 - `2025-10-24 20:24:39`: feat(agent): add support for chained multi-action query execution
 - `2025-10-24 12:24:32`: feat(agent): add support for chained multi-action query execution
+- `2025-10-24 10:49:03`: feat(logging): add structured debug logger for speech recognition events
