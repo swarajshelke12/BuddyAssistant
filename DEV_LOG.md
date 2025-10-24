@@ -53,3 +53,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-24 12:24:32`: feat(agent): add support for chained multi-action query execution
 - `2025-10-24 10:49:03`: feat(logging): add structured debug logger for speech recognition events
 - `2025-10-24 16:54:23`: chore: update gitignore for virtual environment and cache files
+- `2025-10-24 20:46:09`: feat(logging): add structured debug logger for speech recognition events
