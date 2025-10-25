@@ -55,3 +55,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-24 16:54:23`: chore: update gitignore for virtual environment and cache files
 - `2025-10-24 20:46:09`: feat(logging): add structured debug logger for speech recognition events
 - `2025-10-25 12:10:36`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2025-10-25 14:37:50`: fix(audio): resolve buffer underrun in microphone input stream
