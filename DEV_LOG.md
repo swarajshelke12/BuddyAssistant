@@ -58,3 +58,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-25 14:37:50`: fix(audio): resolve buffer underrun in microphone input stream
 - `2025-10-27 22:05:06`: perf: optimize regex pattern compilation in voice parser
 - `2025-10-28 21:19:24`: fix(listener): handle ambient noise calibration timeout gracefully
+- `2025-10-28 17:08:13`: fix(listener): handle ambient noise calibration timeout gracefully
