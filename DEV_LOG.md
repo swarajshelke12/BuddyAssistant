@@ -63,3 +63,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-28 14:50:49`: perf: reduce wake word latency by caching audio buffers
 - `2025-10-29 11:00:12`: test: mock microphone input stream for automated CI test suite
 - `2025-10-29 16:10:18`: refactor: extract command execution into dedicated dispatcher module
+- `2025-10-29 16:35:58`: fix(audio): resolve buffer underrun in microphone input stream
