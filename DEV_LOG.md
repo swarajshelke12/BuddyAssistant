@@ -68,3 +68,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-30 22:32:08`: feat(launcher): support browser URL and desktop shortcut routing
 - `2025-10-30 17:41:12`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2025-10-30 18:16:35`: feat(automation): integrate Windows task management and app discovery
+- `2025-10-30 11:39:46`: fix(listener): handle ambient noise calibration timeout gracefully
