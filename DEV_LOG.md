@@ -65,3 +65,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-29 16:10:18`: refactor: extract command execution into dedicated dispatcher module
 - `2025-10-29 16:35:58`: fix(audio): resolve buffer underrun in microphone input stream
 - `2025-10-30 11:58:47`: chore: update gitignore for virtual environment and cache files
+- `2025-10-30 22:32:08`: feat(launcher): support browser URL and desktop shortcut routing
