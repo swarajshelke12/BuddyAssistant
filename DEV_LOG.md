@@ -70,3 +70,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-30 18:16:35`: feat(automation): integrate Windows task management and app discovery
 - `2025-10-30 11:39:46`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2025-10-31 17:33:26`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
+- `2025-10-31 16:32:23`: docs: add voice command shortcuts and wake-word configuration guide
