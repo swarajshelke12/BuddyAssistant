@@ -73,3 +73,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-10-31 16:32:23`: docs: add voice command shortcuts and wake-word configuration guide
 - `2025-11-01 14:33:56`: feat(launcher): support browser URL and desktop shortcut routing
 - `2025-11-02 16:02:39`: style: format imports and docstrings according to PEP8 standards
+- `2025-11-03 17:20:36`: feat(nlp): support fuzzy scored matching for custom application aliases
