@@ -80,3 +80,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-05 10:52:48`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2025-11-05 18:46:14`: docs: update project roadmap and supported voice command catalog
 - `2025-11-05 20:52:51`: feat(launcher): support browser URL and desktop shortcut routing
+- `2025-11-05 22:24:37`: perf: reduce wake word latency by caching audio buffers
