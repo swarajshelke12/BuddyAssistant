@@ -77,3 +77,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-03 12:25:09`: feat(metrics): track command execution latency and recognition accuracy
 - `2025-11-04 10:56:42`: docs: add troubleshooting steps for microphone access permissions
 - `2025-11-04 21:50:05`: test: mock microphone input stream for automated CI test suite
+- `2025-11-05 10:52:48`: feat(stt): implement energy threshold auto-calibration for noisy rooms
