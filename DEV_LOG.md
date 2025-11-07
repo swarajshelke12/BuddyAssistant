@@ -83,3 +83,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-05 22:24:37`: perf: reduce wake word latency by caching audio buffers
 - `2025-11-07 17:37:00`: feat(config): add external config loader for customizable wake phrases
 - `2025-11-07 21:17:27`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2025-11-07 12:11:37`: chore(deps): bump pyaudio and speechrecognition dependencies
