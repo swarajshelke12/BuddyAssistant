@@ -86,3 +86,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-07 12:11:37`: chore(deps): bump pyaudio and speechrecognition dependencies
 - `2025-11-08 16:54:53`: perf: optimize regex pattern compilation in voice parser
 - `2025-11-10 14:36:50`: docs: document system architecture and execution flow in technical notes
+- `2025-11-10 22:35:57`: refactor(parser): improve multi-intent compound command tokenization
