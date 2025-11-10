@@ -85,3 +85,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-07 21:17:27`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2025-11-07 12:11:37`: chore(deps): bump pyaudio and speechrecognition dependencies
 - `2025-11-08 16:54:53`: perf: optimize regex pattern compilation in voice parser
+- `2025-11-10 14:36:50`: docs: document system architecture and execution flow in technical notes
