@@ -92,3 +92,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-11 14:27:38`: docs: update project roadmap and supported voice command catalog
 - `2025-11-11 15:11:39`: feat(agent): add support for chained multi-action query execution
 - `2025-11-12 17:07:43`: perf: reduce wake word latency by caching audio buffers
+- `2025-11-12 10:07:43`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
