@@ -96,3 +96,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-12 16:15:52`: style: format imports and docstrings according to PEP8 standards
 - `2025-11-12 11:36:22`: docs: update project roadmap and supported voice command catalog
 - `2025-11-12 21:23:51`: chore: update gitignore for virtual environment and cache files
+- `2025-11-13 12:37:10`: docs: add voice command shortcuts and wake-word configuration guide
