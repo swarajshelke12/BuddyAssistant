@@ -99,3 +99,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-13 12:37:10`: docs: add voice command shortcuts and wake-word configuration guide
 - `2025-11-13 11:24:56`: feat(logging): add structured debug logger for speech recognition events
 - `2025-11-13 21:09:45`: feat(config): add external config loader for customizable wake phrases
+- `2025-11-13 14:21:22`: fix(safety): enforce critical system process protection blacklist
