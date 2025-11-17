@@ -101,3 +101,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-13 21:09:45`: feat(config): add external config loader for customizable wake phrases
 - `2025-11-13 14:21:22`: fix(safety): enforce critical system process protection blacklist
 - `2025-11-17 16:50:17`: fix(hotkey): resolve keyboard listener conflict on background threads
+- `2025-11-17 14:14:50`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
