@@ -103,3 +103,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-17 16:50:17`: fix(hotkey): resolve keyboard listener conflict on background threads
 - `2025-11-17 14:14:50`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
 - `2025-11-20 12:01:23`: feat(agent): add support for chained multi-action query execution
+- `2025-11-20 22:50:01`: docs: document system architecture and execution flow in technical notes
