@@ -107,3 +107,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-20 18:59:49`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
 - `2025-11-21 22:02:32`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2025-11-21 16:24:56`: docs: document system architecture and execution flow in technical notes
+- `2025-11-24 11:14:30`: feat(nlp): support fuzzy scored matching for custom application aliases
