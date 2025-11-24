@@ -108,3 +108,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-21 22:02:32`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2025-11-21 16:24:56`: docs: document system architecture and execution flow in technical notes
 - `2025-11-24 11:14:30`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2025-11-24 10:23:31`: docs: update project roadmap and supported voice command catalog
