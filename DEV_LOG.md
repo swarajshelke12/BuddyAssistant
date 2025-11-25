@@ -111,3 +111,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-24 10:23:31`: docs: update project roadmap and supported voice command catalog
 - `2025-11-24 20:45:03`: perf: reduce wake word latency by caching audio buffers
 - `2025-11-24 12:19:40`: perf: optimize regex pattern compilation in voice parser
+- `2025-11-25 20:30:01`: feat(automation): integrate Windows task management and app discovery
