@@ -112,3 +112,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-24 20:45:03`: perf: reduce wake word latency by caching audio buffers
 - `2025-11-24 12:19:40`: perf: optimize regex pattern compilation in voice parser
 - `2025-11-25 20:30:01`: feat(automation): integrate Windows task management and app discovery
+- `2025-11-25 14:23:28`: chore(deps): bump pyaudio and speechrecognition dependencies
