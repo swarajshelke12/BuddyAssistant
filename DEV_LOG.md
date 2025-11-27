@@ -115,3 +115,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-25 14:23:28`: chore(deps): bump pyaudio and speechrecognition dependencies
 - `2025-11-26 17:40:44`: refactor(ui): streamline terminal status feedback and color logging
 - `2025-11-26 21:12:50`: fix(safety): enforce critical system process protection blacklist
+- `2025-11-27 12:59:48`: fix(core): prevent accidental concurrent instances of audio capture loop
