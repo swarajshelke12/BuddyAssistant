@@ -119,3 +119,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-27 22:20:22`: style: format imports and docstrings according to PEP8 standards
 - `2025-11-28 11:05:29`: test: mock microphone input stream for automated CI test suite
 - `2025-11-28 22:43:50`: feat(automation): integrate Windows task management and app discovery
+- `2025-12-01 14:02:08`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
