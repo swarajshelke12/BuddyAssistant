@@ -121,3 +121,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-11-28 22:43:50`: feat(automation): integrate Windows task management and app discovery
 - `2025-12-01 14:02:08`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2025-12-04 22:35:30`: refactor: extract command execution into dedicated dispatcher module
+- `2025-12-04 21:58:27`: chore: update gitignore for virtual environment and cache files
