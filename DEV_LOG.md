@@ -125,3 +125,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-05 20:26:34`: refactor(ui): streamline terminal status feedback and color logging
 - `2025-12-05 18:12:55`: docs: update project roadmap and supported voice command catalog
 - `2025-12-05 16:33:16`: feat(stt): implement energy threshold auto-calibration for noisy rooms
+- `2025-12-05 16:39:40`: refactor(dispatcher): use scoring algorithm for ambiguous application names
