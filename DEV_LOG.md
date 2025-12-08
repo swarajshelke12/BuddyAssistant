@@ -128,3 +128,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-05 16:39:40`: refactor(dispatcher): use scoring algorithm for ambiguous application names
 - `2025-12-08 14:54:25`: refactor(ui): streamline terminal status feedback and color logging
 - `2025-12-08 12:05:45`: refactor(core): modularize listener loop and session timeout handler
+- `2025-12-08 15:23:29`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
