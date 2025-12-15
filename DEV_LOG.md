@@ -131,3 +131,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-08 15:23:29`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2025-12-08 12:23:52`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2025-12-15 11:39:24`: refactor(parser): improve multi-intent compound command tokenization
+- `2025-12-15 14:14:21`: perf: optimize regex pattern compilation in voice parser
