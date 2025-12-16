@@ -134,3 +134,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-15 14:14:21`: perf: optimize regex pattern compilation in voice parser
 - `2025-12-16 12:39:08`: fix(audio): resolve buffer underrun in microphone input stream
 - `2025-12-16 16:03:35`: feat(agent): add support for chained multi-action query execution
+- `2025-12-16 17:15:20`: fix(listener): handle ambient noise calibration timeout gracefully
