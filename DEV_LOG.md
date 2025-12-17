@@ -140,3 +140,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-17 18:42:44`: style: format imports and docstrings according to PEP8 standards
 - `2025-12-17 11:04:39`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
 - `2025-12-17 17:36:23`: docs: add voice command shortcuts and wake-word configuration guide
+- `2025-12-17 21:57:38`: fix(audio): resolve buffer underrun in microphone input stream
