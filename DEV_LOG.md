@@ -137,3 +137,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-16 17:15:20`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2025-12-16 22:20:34`: feat(logging): add structured debug logger for speech recognition events
 - `2025-12-17 10:09:47`: chore: clean up deprecated audio helper functions
+- `2025-12-17 18:42:44`: style: format imports and docstrings according to PEP8 standards
