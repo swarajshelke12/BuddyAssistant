@@ -141,3 +141,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-17 11:04:39`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
 - `2025-12-17 17:36:23`: docs: add voice command shortcuts and wake-word configuration guide
 - `2025-12-17 21:57:38`: fix(audio): resolve buffer underrun in microphone input stream
+- `2025-12-18 22:23:55`: docs: update project roadmap and supported voice command catalog
