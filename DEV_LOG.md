@@ -147,3 +147,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-21 15:59:50`: style: format imports and docstrings according to PEP8 standards
 - `2025-12-23 11:35:32`: chore: clean up deprecated audio helper functions
 - `2025-12-23 12:46:57`: fix(listener): handle ambient noise calibration timeout gracefully
+- `2025-12-23 14:21:22`: feat(automation): integrate Windows task management and app discovery
