@@ -145,3 +145,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-19 15:23:07`: docs: document system architecture and execution flow in technical notes
 - `2025-12-19 20:23:09`: chore: clean up deprecated audio helper functions
 - `2025-12-21 15:59:50`: style: format imports and docstrings according to PEP8 standards
+- `2025-12-23 11:35:32`: chore: clean up deprecated audio helper functions
