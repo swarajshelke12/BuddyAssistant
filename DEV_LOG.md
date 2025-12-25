@@ -152,3 +152,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-24 10:47:21`: test: mock microphone input stream for automated CI test suite
 - `2025-12-25 11:43:03`: style: format imports and docstrings according to PEP8 standards
 - `2025-12-25 18:42:16`: feat(logging): add structured debug logger for speech recognition events
+- `2025-12-25 18:34:30`: refactor(core): modularize listener loop and session timeout handler
