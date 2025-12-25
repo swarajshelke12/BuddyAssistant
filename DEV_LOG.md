@@ -154,3 +154,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-25 18:42:16`: feat(logging): add structured debug logger for speech recognition events
 - `2025-12-25 18:34:30`: refactor(core): modularize listener loop and session timeout handler
 - `2025-12-25 22:26:15`: feat(config): add external config loader for customizable wake phrases
+- `2025-12-25 14:45:32`: docs: document system architecture and execution flow in technical notes
