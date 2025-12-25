@@ -151,3 +151,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-24 12:19:37`: feat(metrics): track command execution latency and recognition accuracy
 - `2025-12-24 10:47:21`: test: mock microphone input stream for automated CI test suite
 - `2025-12-25 11:43:03`: style: format imports and docstrings according to PEP8 standards
+- `2025-12-25 18:42:16`: feat(logging): add structured debug logger for speech recognition events
