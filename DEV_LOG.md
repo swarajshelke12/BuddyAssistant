@@ -156,3 +156,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-25 22:26:15`: feat(config): add external config loader for customizable wake phrases
 - `2025-12-25 14:45:32`: docs: document system architecture and execution flow in technical notes
 - `2025-12-29 15:34:44`: test: mock microphone input stream for automated CI test suite
+- `2025-12-29 20:15:42`: chore: update gitignore for virtual environment and cache files
