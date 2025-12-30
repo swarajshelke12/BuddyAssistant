@@ -159,3 +159,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-29 20:15:42`: chore: update gitignore for virtual environment and cache files
 - `2025-12-29 21:42:23`: docs: add voice command shortcuts and wake-word configuration guide
 - `2025-12-29 18:27:22`: docs: add troubleshooting steps for microphone access permissions
+- `2025-12-30 14:38:34`: feat(automation): integrate Windows task management and app discovery
