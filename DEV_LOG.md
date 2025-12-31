@@ -161,3 +161,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-29 18:27:22`: docs: add troubleshooting steps for microphone access permissions
 - `2025-12-30 14:38:34`: feat(automation): integrate Windows task management and app discovery
 - `2025-12-31 14:02:22`: feat(stt): implement energy threshold auto-calibration for noisy rooms
+- `2025-12-31 22:01:02`: chore: update gitignore for virtual environment and cache files
