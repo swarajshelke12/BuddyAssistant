@@ -164,3 +164,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2025-12-31 22:01:02`: chore: update gitignore for virtual environment and cache files
 - `2026-01-01 14:59:25`: perf: optimize fuzzy matching index for installed Windows applications
 - `2026-01-01 16:46:37`: refactor(parser): improve multi-intent compound command tokenization
+- `2026-01-02 10:09:15`: fix(safety): enforce critical system process protection blacklist
