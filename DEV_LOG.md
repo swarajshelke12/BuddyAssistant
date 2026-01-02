@@ -165,3 +165,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-01 14:59:25`: perf: optimize fuzzy matching index for installed Windows applications
 - `2026-01-01 16:46:37`: refactor(parser): improve multi-intent compound command tokenization
 - `2026-01-02 10:09:15`: fix(safety): enforce critical system process protection blacklist
+- `2026-01-02 15:33:13`: docs: add voice command shortcuts and wake-word configuration guide
