@@ -168,3 +168,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-02 15:33:13`: docs: add voice command shortcuts and wake-word configuration guide
 - `2026-01-03 15:57:55`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-01-05 21:35:18`: perf: optimize fuzzy matching index for installed Windows applications
+- `2026-01-06 11:02:53`: docs: document system architecture and execution flow in technical notes
