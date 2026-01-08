@@ -171,3 +171,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-06 11:02:53`: docs: document system architecture and execution flow in technical notes
 - `2026-01-08 20:25:36`: fix(hotkey): resolve keyboard listener conflict on background threads
 - `2026-01-08 14:48:50`: fix(audio): resolve buffer underrun in microphone input stream
+- `2026-01-08 22:18:29`: docs: update project roadmap and supported voice command catalog
