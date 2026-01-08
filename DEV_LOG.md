@@ -169,3 +169,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-03 15:57:55`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-01-05 21:35:18`: perf: optimize fuzzy matching index for installed Windows applications
 - `2026-01-06 11:02:53`: docs: document system architecture and execution flow in technical notes
+- `2026-01-08 20:25:36`: fix(hotkey): resolve keyboard listener conflict on background threads
