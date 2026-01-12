@@ -174,3 +174,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-08 22:18:29`: docs: update project roadmap and supported voice command catalog
 - `2026-01-09 17:28:21`: perf: reduce wake word latency by caching audio buffers
 - `2026-01-11 21:31:53`: fix(audio): resolve buffer underrun in microphone input stream
+- `2026-01-12 12:05:06`: chore: clean up deprecated audio helper functions
