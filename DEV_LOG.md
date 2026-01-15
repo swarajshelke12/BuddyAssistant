@@ -183,3 +183,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-14 15:17:36`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-01-15 16:44:32`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-01-15 21:23:39`: feat(config): add external config loader for customizable wake phrases
+- `2026-01-15 15:11:37`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
