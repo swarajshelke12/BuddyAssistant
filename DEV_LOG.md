@@ -182,3 +182,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-14 10:39:19`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2026-01-14 15:17:36`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-01-15 16:44:32`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2026-01-15 21:23:39`: feat(config): add external config loader for customizable wake phrases
