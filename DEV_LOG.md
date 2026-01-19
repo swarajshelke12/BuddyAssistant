@@ -185,3 +185,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-15 21:23:39`: feat(config): add external config loader for customizable wake phrases
 - `2026-01-15 15:11:37`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
 - `2026-01-17 11:46:49`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2026-01-19 16:06:00`: feat(metrics): track command execution latency and recognition accuracy
