@@ -187,3 +187,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-17 11:46:49`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-01-19 16:06:00`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-01-19 11:25:44`: refactor(core): modularize listener loop and session timeout handler
+- `2026-01-20 12:48:38`: refactor(parser): improve multi-intent compound command tokenization
