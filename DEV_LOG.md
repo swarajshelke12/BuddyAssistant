@@ -188,3 +188,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-19 16:06:00`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-01-19 11:25:44`: refactor(core): modularize listener loop and session timeout handler
 - `2026-01-20 12:48:38`: refactor(parser): improve multi-intent compound command tokenization
+- `2026-01-21 17:49:33`: fix(listener): handle ambient noise calibration timeout gracefully
