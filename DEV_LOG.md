@@ -189,3 +189,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-19 11:25:44`: refactor(core): modularize listener loop and session timeout handler
 - `2026-01-20 12:48:38`: refactor(parser): improve multi-intent compound command tokenization
 - `2026-01-21 17:49:33`: fix(listener): handle ambient noise calibration timeout gracefully
+- `2026-01-21 11:01:52`: feat(stt): implement energy threshold auto-calibration for noisy rooms
