@@ -194,3 +194,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-23 18:10:15`: fix(safety): enforce critical system process protection blacklist
 - `2026-01-23 10:58:16`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-01-23 12:56:22`: refactor(core): modularize listener loop and session timeout handler
+- `2026-01-23 18:19:16`: docs: add troubleshooting steps for microphone access permissions
