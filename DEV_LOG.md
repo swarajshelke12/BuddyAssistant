@@ -197,3 +197,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-23 18:19:16`: docs: add troubleshooting steps for microphone access permissions
 - `2026-01-25 14:49:59`: test: mock microphone input stream for automated CI test suite
 - `2026-01-26 21:03:02`: fix(audio): resolve buffer underrun in microphone input stream
+- `2026-01-27 15:48:22`: feat(launcher): support browser URL and desktop shortcut routing
