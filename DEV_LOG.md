@@ -203,3 +203,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-28 17:04:30`: test: mock microphone input stream for automated CI test suite
 - `2026-01-28 16:44:04`: chore: update gitignore for virtual environment and cache files
 - `2026-01-29 16:35:58`: style: format imports and docstrings according to PEP8 standards
+- `2026-01-29 11:44:46`: fix(listener): handle ambient noise calibration timeout gracefully
