@@ -206,3 +206,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-01-29 11:44:46`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2026-01-30 21:38:29`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-02-02 11:49:37`: refactor(parser): improve multi-intent compound command tokenization
+- `2026-02-02 15:06:59`: refactor(parser): improve multi-intent compound command tokenization
