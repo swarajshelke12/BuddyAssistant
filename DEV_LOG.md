@@ -208,3 +208,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-02 11:49:37`: refactor(parser): improve multi-intent compound command tokenization
 - `2026-02-02 15:06:59`: refactor(parser): improve multi-intent compound command tokenization
 - `2026-02-03 15:15:51`: docs: add voice command shortcuts and wake-word configuration guide
+- `2026-02-04 14:42:58`: refactor(parser): improve multi-intent compound command tokenization
