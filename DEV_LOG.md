@@ -210,3 +210,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-03 15:15:51`: docs: add voice command shortcuts and wake-word configuration guide
 - `2026-02-04 14:42:58`: refactor(parser): improve multi-intent compound command tokenization
 - `2026-02-04 12:40:27`: feat(config): add external config loader for customizable wake phrases
+- `2026-02-04 17:47:16`: style: format imports and docstrings according to PEP8 standards
