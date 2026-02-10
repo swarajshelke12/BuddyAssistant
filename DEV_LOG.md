@@ -215,3 +215,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-05 11:46:07`: refactor(dispatcher): use scoring algorithm for ambiguous application names
 - `2026-02-06 16:36:53`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
 - `2026-02-09 21:41:10`: style: format imports and docstrings according to PEP8 standards
+- `2026-02-10 21:29:40`: docs: document system architecture and execution flow in technical notes
