@@ -220,3 +220,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-10 17:46:16`: chore(deps): bump pyaudio and speechrecognition dependencies
 - `2026-02-11 14:53:23`: chore: update gitignore for virtual environment and cache files
 - `2026-02-11 11:54:53`: feat(agent): add support for chained multi-action query execution
+- `2026-02-11 11:22:12`: perf: reduce wake word latency by caching audio buffers
