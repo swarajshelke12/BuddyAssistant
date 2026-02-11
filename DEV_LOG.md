@@ -218,3 +218,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-10 21:29:40`: docs: document system architecture and execution flow in technical notes
 - `2026-02-10 11:04:02`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
 - `2026-02-10 17:46:16`: chore(deps): bump pyaudio and speechrecognition dependencies
+- `2026-02-11 14:53:23`: chore: update gitignore for virtual environment and cache files
