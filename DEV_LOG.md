@@ -225,3 +225,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-12 12:45:11`: fix(safety): enforce critical system process protection blacklist
 - `2026-02-13 20:11:06`: test: mock microphone input stream for automated CI test suite
 - `2026-02-13 20:21:56`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2026-02-13 16:43:43`: refactor(parser): improve multi-intent compound command tokenization
