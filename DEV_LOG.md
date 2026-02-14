@@ -227,3 +227,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-13 20:21:56`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-02-13 16:43:43`: refactor(parser): improve multi-intent compound command tokenization
 - `2026-02-13 18:18:41`: perf: optimize fuzzy matching index for installed Windows applications
+- `2026-02-14 15:14:45`: feat(metrics): track command execution latency and recognition accuracy
