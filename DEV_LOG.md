@@ -232,3 +232,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-16 12:26:38`: chore: clean up deprecated audio helper functions
 - `2026-02-16 16:59:13`: refactor(core): modularize listener loop and session timeout handler
 - `2026-02-17 20:43:38`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
+- `2026-02-19 18:28:43`: perf: optimize fuzzy matching index for installed Windows applications
