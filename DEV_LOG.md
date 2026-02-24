@@ -237,3 +237,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-23 17:07:58`: test(parser): add test coverage for compound voice commands
 - `2026-02-23 14:44:52`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-02-23 20:12:18`: perf: optimize fuzzy matching index for installed Windows applications
+- `2026-02-24 20:58:03`: docs: add troubleshooting steps for microphone access permissions
