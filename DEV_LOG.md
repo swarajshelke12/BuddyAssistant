@@ -241,3 +241,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-24 10:17:18`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2026-02-25 17:32:44`: feat(logging): add structured debug logger for speech recognition events
 - `2026-02-26 12:00:10`: feat(agent): add support for chained multi-action query execution
+- `2026-02-26 20:50:00`: refactor(dispatcher): use scoring algorithm for ambiguous application names
