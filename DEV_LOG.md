@@ -244,3 +244,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-26 20:50:00`: refactor(dispatcher): use scoring algorithm for ambiguous application names
 - `2026-02-27 16:06:32`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
 - `2026-02-27 12:50:20`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
+- `2026-03-03 16:13:20`: feat(logging): add structured debug logger for speech recognition events
