@@ -246,3 +246,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-02-27 12:50:20`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
 - `2026-03-03 16:13:20`: feat(logging): add structured debug logger for speech recognition events
 - `2026-03-03 17:23:31`: chore: clean up deprecated audio helper functions
+- `2026-03-05 11:09:13`: feat(logging): add structured debug logger for speech recognition events
