@@ -247,3 +247,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-03 16:13:20`: feat(logging): add structured debug logger for speech recognition events
 - `2026-03-03 17:23:31`: chore: clean up deprecated audio helper functions
 - `2026-03-05 11:09:13`: feat(logging): add structured debug logger for speech recognition events
+- `2026-03-06 11:18:51`: fix(core): prevent accidental concurrent instances of audio capture loop
