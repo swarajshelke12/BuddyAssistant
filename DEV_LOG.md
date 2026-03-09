@@ -250,3 +250,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-06 11:18:51`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2026-03-06 20:26:25`: docs: document system architecture and execution flow in technical notes
 - `2026-03-09 22:10:14`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
+- `2026-03-09 17:12:30`: fix(audio): resolve buffer underrun in microphone input stream
