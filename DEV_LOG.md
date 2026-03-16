@@ -256,3 +256,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-16 14:26:59`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2026-03-16 16:30:10`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-03-16 10:55:25`: fix(audio): resolve buffer underrun in microphone input stream
+- `2026-03-16 18:32:27`: docs: add troubleshooting steps for microphone access permissions
