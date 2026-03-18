@@ -258,3 +258,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-16 10:55:25`: fix(audio): resolve buffer underrun in microphone input stream
 - `2026-03-16 18:32:27`: docs: add troubleshooting steps for microphone access permissions
 - `2026-03-17 11:23:51`: docs: add voice command shortcuts and wake-word configuration guide
+- `2026-03-18 17:18:47`: feat(nlp): support fuzzy scored matching for custom application aliases
