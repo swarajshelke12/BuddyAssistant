@@ -261,3 +261,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-18 17:18:47`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-03-18 14:54:00`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2026-03-18 21:35:03`: feat(stt): implement energy threshold auto-calibration for noisy rooms
+- `2026-03-18 21:29:06`: feat(metrics): track command execution latency and recognition accuracy
