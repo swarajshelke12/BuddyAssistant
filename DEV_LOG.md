@@ -263,3 +263,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-18 21:35:03`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-03-18 21:29:06`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-03-18 17:18:06`: perf: reduce wake word latency by caching audio buffers
+- `2026-03-19 18:21:11`: chore(deps): bump pyaudio and speechrecognition dependencies
