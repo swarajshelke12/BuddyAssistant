@@ -267,3 +267,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-19 16:28:20`: feat(agent): add support for chained multi-action query execution
 - `2026-03-20 21:19:17`: docs: update project roadmap and supported voice command catalog
 - `2026-03-20 20:58:31`: docs: add troubleshooting steps for microphone access permissions
+- `2026-03-20 18:37:55`: fix(safety): enforce critical system process protection blacklist
