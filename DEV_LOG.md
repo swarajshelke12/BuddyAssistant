@@ -265,3 +265,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-18 17:18:06`: perf: reduce wake word latency by caching audio buffers
 - `2026-03-19 18:21:11`: chore(deps): bump pyaudio and speechrecognition dependencies
 - `2026-03-19 16:28:20`: feat(agent): add support for chained multi-action query execution
+- `2026-03-20 21:19:17`: docs: update project roadmap and supported voice command catalog
