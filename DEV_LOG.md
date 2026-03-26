@@ -275,3 +275,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-23 22:21:00`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-03-24 17:04:04`: fix(audio): resolve buffer underrun in microphone input stream
 - `2026-03-24 18:05:19`: feat(agent): add support for chained multi-action query execution
+- `2026-03-26 18:21:31`: feat(config): add external config loader for customizable wake phrases
