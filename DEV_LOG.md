@@ -277,3 +277,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-24 18:05:19`: feat(agent): add support for chained multi-action query execution
 - `2026-03-26 18:21:31`: feat(config): add external config loader for customizable wake phrases
 - `2026-03-26 17:28:17`: chore: clean up deprecated audio helper functions
+- `2026-03-26 22:45:42`: feat(stt): implement energy threshold auto-calibration for noisy rooms
