@@ -279,3 +279,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-26 17:28:17`: chore: clean up deprecated audio helper functions
 - `2026-03-26 22:45:42`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-03-27 16:35:48`: refactor(core): modularize listener loop and session timeout handler
+- `2026-03-27 14:29:04`: refactor(ui): streamline terminal status feedback and color logging
