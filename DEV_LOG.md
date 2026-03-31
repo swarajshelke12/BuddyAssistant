@@ -283,3 +283,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-27 21:41:46`: feat(agent): add support for chained multi-action query execution
 - `2026-03-30 21:09:07`: docs: document system architecture and execution flow in technical notes
 - `2026-03-31 20:22:06`: fix(listener): handle ambient noise calibration timeout gracefully
+- `2026-03-31 12:07:35`: feat(metrics): track command execution latency and recognition accuracy
