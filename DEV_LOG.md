@@ -286,3 +286,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-31 12:07:35`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-03-31 16:55:12`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2026-03-31 12:30:04`: feat(stt): implement energy threshold auto-calibration for noisy rooms
+- `2026-04-01 17:15:07`: perf: optimize regex pattern compilation in voice parser
