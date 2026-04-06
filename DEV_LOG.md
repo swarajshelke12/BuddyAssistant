@@ -288,3 +288,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-03-31 12:30:04`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-04-01 17:15:07`: perf: optimize regex pattern compilation in voice parser
 - `2026-04-01 18:15:47`: fix(audio): resolve buffer underrun in microphone input stream
+- `2026-04-06 12:48:40`: perf: optimize fuzzy matching index for installed Windows applications
