@@ -289,3 +289,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-01 17:15:07`: perf: optimize regex pattern compilation in voice parser
 - `2026-04-01 18:15:47`: fix(audio): resolve buffer underrun in microphone input stream
 - `2026-04-06 12:48:40`: perf: optimize fuzzy matching index for installed Windows applications
+- `2026-04-06 11:38:11`: perf: optimize regex pattern compilation in voice parser
