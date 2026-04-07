@@ -292,3 +292,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-06 11:38:11`: perf: optimize regex pattern compilation in voice parser
 - `2026-04-06 17:32:19`: test(parser): add test coverage for compound voice commands
 - `2026-04-07 15:38:34`: fix(safety): enforce critical system process protection blacklist
+- `2026-04-07 17:06:08`: chore(deps): bump pyaudio and speechrecognition dependencies
