@@ -296,3 +296,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-07 22:25:05`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-04-08 15:44:02`: fix(hotkey): resolve keyboard listener conflict on background threads
 - `2026-04-09 22:32:32`: fix(audio): resolve buffer underrun in microphone input stream
+- `2026-04-09 12:25:27`: fix(safety): enforce critical system process protection blacklist
