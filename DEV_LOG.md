@@ -301,3 +301,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-10 10:03:45`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-04-10 12:02:51`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
 - `2026-04-10 15:35:40`: feat(logging): add structured debug logger for speech recognition events
+- `2026-04-11 10:32:43`: feat(launcher): support browser URL and desktop shortcut routing
