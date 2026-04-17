@@ -302,3 +302,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-10 12:02:51`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
 - `2026-04-10 15:35:40`: feat(logging): add structured debug logger for speech recognition events
 - `2026-04-11 10:32:43`: feat(launcher): support browser URL and desktop shortcut routing
+- `2026-04-17 10:28:18`: refactor(ui): streamline terminal status feedback and color logging
