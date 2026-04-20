@@ -304,3 +304,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-11 10:32:43`: feat(launcher): support browser URL and desktop shortcut routing
 - `2026-04-17 10:28:18`: refactor(ui): streamline terminal status feedback and color logging
 - `2026-04-20 14:07:19`: refactor(dispatcher): use scoring algorithm for ambiguous application names
+- `2026-04-20 16:11:51`: test(parser): add test coverage for compound voice commands
