@@ -306,3 +306,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-20 14:07:19`: refactor(dispatcher): use scoring algorithm for ambiguous application names
 - `2026-04-20 16:11:51`: test(parser): add test coverage for compound voice commands
 - `2026-04-20 10:57:25`: docs: add troubleshooting steps for microphone access permissions
+- `2026-04-20 11:46:44`: refactor(dispatcher): use scoring algorithm for ambiguous application names
