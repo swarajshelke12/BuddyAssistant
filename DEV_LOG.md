@@ -310,3 +310,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-21 12:53:50`: fix(safety): enforce critical system process protection blacklist
 - `2026-04-22 14:56:45`: refactor(parser): improve multi-intent compound command tokenization
 - `2026-04-22 15:33:38`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
+- `2026-04-22 11:50:18`: style: format imports and docstrings according to PEP8 standards
