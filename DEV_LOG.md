@@ -308,3 +308,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-20 10:57:25`: docs: add troubleshooting steps for microphone access permissions
 - `2026-04-20 11:46:44`: refactor(dispatcher): use scoring algorithm for ambiguous application names
 - `2026-04-21 12:53:50`: fix(safety): enforce critical system process protection blacklist
+- `2026-04-22 14:56:45`: refactor(parser): improve multi-intent compound command tokenization
