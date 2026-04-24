@@ -313,3 +313,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-22 11:50:18`: style: format imports and docstrings according to PEP8 standards
 - `2026-04-23 11:25:36`: fix(hotkey): resolve keyboard listener conflict on background threads
 - `2026-04-23 21:31:03`: chore: clean up deprecated audio helper functions
+- `2026-04-24 16:13:39`: fix(audio): resolve buffer underrun in microphone input stream
