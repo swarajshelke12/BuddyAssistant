@@ -315,3 +315,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-23 21:31:03`: chore: clean up deprecated audio helper functions
 - `2026-04-24 16:13:39`: fix(audio): resolve buffer underrun in microphone input stream
 - `2026-04-27 22:15:12`: feat(stt): implement energy threshold auto-calibration for noisy rooms
+- `2026-04-28 16:19:48`: test: mock microphone input stream for automated CI test suite
