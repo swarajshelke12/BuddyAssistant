@@ -319,3 +319,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-28 11:58:27`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-04-29 12:33:27`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-04-29 21:38:25`: test(parser): add test coverage for compound voice commands
+- `2026-04-29 16:28:16`: perf: optimize fuzzy matching index for installed Windows applications
