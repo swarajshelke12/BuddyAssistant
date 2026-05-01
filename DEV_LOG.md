@@ -321,3 +321,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-04-29 21:38:25`: test(parser): add test coverage for compound voice commands
 - `2026-04-29 16:28:16`: perf: optimize fuzzy matching index for installed Windows applications
 - `2026-04-30 17:16:06`: chore: update gitignore for virtual environment and cache files
+- `2026-05-01 10:57:39`: chore: clean up deprecated audio helper functions
