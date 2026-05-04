@@ -325,3 +325,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-01 12:00:48`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2026-05-04 15:47:42`: docs: add troubleshooting steps for microphone access permissions
 - `2026-05-04 16:17:35`: perf: reduce wake word latency by caching audio buffers
+- `2026-05-04 21:47:04`: chore: clean up deprecated audio helper functions
