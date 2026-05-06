@@ -329,3 +329,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-04 12:11:44`: docs: update project roadmap and supported voice command catalog
 - `2026-05-04 22:12:04`: feat(launcher): support browser URL and desktop shortcut routing
 - `2026-05-06 14:44:36`: feat(agent): add support for chained multi-action query execution
+- `2026-05-06 20:32:00`: perf: reduce wake word latency by caching audio buffers
