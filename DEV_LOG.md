@@ -333,3 +333,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-06 11:06:10`: fix(audio): resolve buffer underrun in microphone input stream
 - `2026-05-07 21:24:35`: feat(config): add external config loader for customizable wake phrases
 - `2026-05-08 15:27:27`: chore(deps): bump pyaudio and speechrecognition dependencies
+- `2026-05-09 14:05:34`: perf: optimize fuzzy matching index for installed Windows applications
