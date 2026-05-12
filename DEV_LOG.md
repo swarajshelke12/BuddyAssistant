@@ -336,3 +336,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-09 14:05:34`: perf: optimize fuzzy matching index for installed Windows applications
 - `2026-05-11 16:27:45`: refactor(parser): improve multi-intent compound command tokenization
 - `2026-05-12 10:17:44`: perf: optimize fuzzy matching index for installed Windows applications
+- `2026-05-12 21:06:15`: chore(deps): bump pyaudio and speechrecognition dependencies
