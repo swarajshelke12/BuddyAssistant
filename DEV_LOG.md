@@ -338,3 +338,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-12 10:17:44`: perf: optimize fuzzy matching index for installed Windows applications
 - `2026-05-12 21:06:15`: chore(deps): bump pyaudio and speechrecognition dependencies
 - `2026-05-13 20:08:47`: feat(config): add external config loader for customizable wake phrases
+- `2026-05-13 14:20:46`: feat(agent): add support for chained multi-action query execution
