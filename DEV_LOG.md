@@ -341,3 +341,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-13 14:20:46`: feat(agent): add support for chained multi-action query execution
 - `2026-05-13 15:29:54`: docs: add troubleshooting steps for microphone access permissions
 - `2026-05-14 12:43:44`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
+- `2026-05-15 17:26:05`: test: mock microphone input stream for automated CI test suite
