@@ -342,3 +342,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-13 15:29:54`: docs: add troubleshooting steps for microphone access permissions
 - `2026-05-14 12:43:44`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-05-15 17:26:05`: test: mock microphone input stream for automated CI test suite
+- `2026-05-18 21:59:54`: docs: update project roadmap and supported voice command catalog
