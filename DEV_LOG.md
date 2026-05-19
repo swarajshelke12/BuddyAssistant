@@ -344,3 +344,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-15 17:26:05`: test: mock microphone input stream for automated CI test suite
 - `2026-05-18 21:59:54`: docs: update project roadmap and supported voice command catalog
 - `2026-05-18 10:54:58`: fix(listener): handle ambient noise calibration timeout gracefully
+- `2026-05-19 10:33:00`: docs: add troubleshooting steps for microphone access permissions
