@@ -346,3 +346,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-18 10:54:58`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2026-05-19 10:33:00`: docs: add troubleshooting steps for microphone access permissions
 - `2026-05-20 15:17:59`: perf: optimize fuzzy matching index for installed Windows applications
+- `2026-05-20 14:18:51`: style: format imports and docstrings according to PEP8 standards
