@@ -347,3 +347,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-19 10:33:00`: docs: add troubleshooting steps for microphone access permissions
 - `2026-05-20 15:17:59`: perf: optimize fuzzy matching index for installed Windows applications
 - `2026-05-20 14:18:51`: style: format imports and docstrings according to PEP8 standards
+- `2026-05-21 14:05:34`: docs: document system architecture and execution flow in technical notes
