@@ -349,3 +349,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-20 14:18:51`: style: format imports and docstrings according to PEP8 standards
 - `2026-05-21 14:05:34`: docs: document system architecture and execution flow in technical notes
 - `2026-05-21 20:39:01`: feat(metrics): track command execution latency and recognition accuracy
+- `2026-05-22 12:17:43`: chore: update gitignore for virtual environment and cache files
