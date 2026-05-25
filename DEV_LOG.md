@@ -351,3 +351,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-21 20:39:01`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-05-22 12:17:43`: chore: update gitignore for virtual environment and cache files
 - `2026-05-22 20:47:52`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
+- `2026-05-25 21:02:21`: refactor: extract command execution into dedicated dispatcher module
