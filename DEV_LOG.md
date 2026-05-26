@@ -353,3 +353,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-22 20:47:52`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-05-25 21:02:21`: refactor: extract command execution into dedicated dispatcher module
 - `2026-05-26 22:05:57`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2026-05-26 15:56:32`: perf: optimize fuzzy matching index for installed Windows applications
