@@ -354,3 +354,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-25 21:02:21`: refactor: extract command execution into dedicated dispatcher module
 - `2026-05-26 22:05:57`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-05-26 15:56:32`: perf: optimize fuzzy matching index for installed Windows applications
+- `2026-05-27 12:46:29`: chore(deps): bump pyaudio and speechrecognition dependencies
