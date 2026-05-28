@@ -358,3 +358,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-27 18:18:36`: fix(safety): enforce critical system process protection blacklist
 - `2026-05-28 21:43:42`: feat(config): add external config loader for customizable wake phrases
 - `2026-05-28 12:45:10`: feat(metrics): track command execution latency and recognition accuracy
+- `2026-05-28 20:38:40`: perf: optimize fuzzy matching index for installed Windows applications
