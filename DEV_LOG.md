@@ -360,3 +360,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-28 12:45:10`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-05-28 20:38:40`: perf: optimize fuzzy matching index for installed Windows applications
 - `2026-05-28 21:23:28`: refactor(core): modularize listener loop and session timeout handler
+- `2026-05-29 12:40:47`: feat(stt): implement energy threshold auto-calibration for noisy rooms
