@@ -364,3 +364,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-29 10:47:24`: docs: add voice command shortcuts and wake-word configuration guide
 - `2026-05-29 10:29:19`: feat(automation): integrate Windows task management and app discovery
 - `2026-06-01 16:05:24`: feat(config): add external config loader for customizable wake phrases
+- `2026-06-01 18:25:31`: fix(safety): enforce critical system process protection blacklist
