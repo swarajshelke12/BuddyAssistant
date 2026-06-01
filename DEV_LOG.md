@@ -365,3 +365,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-05-29 10:29:19`: feat(automation): integrate Windows task management and app discovery
 - `2026-06-01 16:05:24`: feat(config): add external config loader for customizable wake phrases
 - `2026-06-01 18:25:31`: fix(safety): enforce critical system process protection blacklist
+- `2026-06-01 16:11:46`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
