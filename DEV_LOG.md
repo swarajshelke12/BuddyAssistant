@@ -369,3 +369,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-02 20:56:05`: test: mock microphone input stream for automated CI test suite
 - `2026-06-02 14:13:34`: refactor(ui): streamline terminal status feedback and color logging
 - `2026-06-04 22:26:30`: chore(deps): bump pyaudio and speechrecognition dependencies
+- `2026-06-04 20:59:31`: fix(listener): handle ambient noise calibration timeout gracefully
