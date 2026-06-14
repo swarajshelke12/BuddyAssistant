@@ -373,3 +373,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-04 21:09:11`: refactor(ui): streamline terminal status feedback and color logging
 - `2026-06-05 18:14:37`: docs: update project roadmap and supported voice command catalog
 - `2026-06-07 21:13:35`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
+- `2026-06-14 20:52:55`: test(parser): add test coverage for compound voice commands
