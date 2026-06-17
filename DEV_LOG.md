@@ -377,3 +377,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-15 16:28:13`: chore: update gitignore for virtual environment and cache files
 - `2026-06-15 14:11:10`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
 - `2026-06-16 12:42:28`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
+- `2026-06-17 14:17:40`: refactor: extract command execution into dedicated dispatcher module
