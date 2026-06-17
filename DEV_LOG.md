@@ -380,3 +380,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-17 14:17:40`: refactor: extract command execution into dedicated dispatcher module
 - `2026-06-17 14:54:03`: docs: document system architecture and execution flow in technical notes
 - `2026-06-17 16:11:01`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2026-06-17 17:52:25`: fix(hotkey): resolve keyboard listener conflict on background threads
