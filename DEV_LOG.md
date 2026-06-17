@@ -381,3 +381,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-17 14:54:03`: docs: document system architecture and execution flow in technical notes
 - `2026-06-17 16:11:01`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-06-17 17:52:25`: fix(hotkey): resolve keyboard listener conflict on background threads
+- `2026-06-17 18:48:45`: refactor(core): modularize listener loop and session timeout handler
