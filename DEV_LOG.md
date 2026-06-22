@@ -382,3 +382,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-17 16:11:01`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-06-17 17:52:25`: fix(hotkey): resolve keyboard listener conflict on background threads
 - `2026-06-17 18:48:45`: refactor(core): modularize listener loop and session timeout handler
+- `2026-06-22 17:58:31`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
