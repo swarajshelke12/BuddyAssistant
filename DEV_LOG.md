@@ -385,3 +385,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-22 17:58:31`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
 - `2026-06-22 17:41:35`: refactor(ui): streamline terminal status feedback and color logging
 - `2026-06-23 11:45:36`: fix(safety): enforce critical system process protection blacklist
+- `2026-06-23 11:33:02`: test(parser): add test coverage for compound voice commands
