@@ -384,3 +384,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-17 18:48:45`: refactor(core): modularize listener loop and session timeout handler
 - `2026-06-22 17:58:31`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
 - `2026-06-22 17:41:35`: refactor(ui): streamline terminal status feedback and color logging
+- `2026-06-23 11:45:36`: fix(safety): enforce critical system process protection blacklist
