@@ -387,3 +387,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-23 11:45:36`: fix(safety): enforce critical system process protection blacklist
 - `2026-06-23 11:33:02`: test(parser): add test coverage for compound voice commands
 - `2026-06-24 16:48:17`: docs: update project roadmap and supported voice command catalog
+- `2026-06-24 21:31:21`: feat(nlp): support fuzzy scored matching for custom application aliases
