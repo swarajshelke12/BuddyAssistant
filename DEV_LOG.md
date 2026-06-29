@@ -390,3 +390,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-24 21:31:21`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-06-26 17:15:55`: fix(audio): resolve buffer underrun in microphone input stream
 - `2026-06-26 10:16:34`: feat(launcher): support browser URL and desktop shortcut routing
+- `2026-06-29 15:16:00`: docs: add voice command shortcuts and wake-word configuration guide
