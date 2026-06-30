@@ -394,3 +394,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-29 10:31:19`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-06-29 17:11:13`: chore(deps): bump pyaudio and speechrecognition dependencies
 - `2026-06-29 14:52:56`: perf: reduce wake word latency by caching audio buffers
+- `2026-06-30 12:39:58`: fix(core): prevent accidental concurrent instances of audio capture loop
