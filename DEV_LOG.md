@@ -395,3 +395,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-06-29 17:11:13`: chore(deps): bump pyaudio and speechrecognition dependencies
 - `2026-06-29 14:52:56`: perf: reduce wake word latency by caching audio buffers
 - `2026-06-30 12:39:58`: fix(core): prevent accidental concurrent instances of audio capture loop
+- `2026-07-05 15:08:49`: feat(logging): add structured debug logger for speech recognition events
