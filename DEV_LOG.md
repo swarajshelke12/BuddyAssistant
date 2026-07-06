@@ -399,3 +399,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-05 11:18:53`: refactor(parser): improve multi-intent compound command tokenization
 - `2026-07-05 21:29:26`: refactor(ui): streamline terminal status feedback and color logging
 - `2026-07-06 12:07:17`: perf: optimize regex pattern compilation in voice parser
+- `2026-07-06 11:19:31`: refactor(core): modularize listener loop and session timeout handler
