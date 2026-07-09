@@ -404,3 +404,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-08 17:34:05`: style: format imports and docstrings according to PEP8 standards
 - `2026-07-09 10:11:28`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-07-09 21:05:39`: docs: add voice command shortcuts and wake-word configuration guide
+- `2026-07-09 21:09:22`: feat(metrics): track command execution latency and recognition accuracy
