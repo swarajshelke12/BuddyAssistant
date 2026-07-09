@@ -402,3 +402,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-06 11:19:31`: refactor(core): modularize listener loop and session timeout handler
 - `2026-07-07 22:03:39`: fix(audio): resolve buffer underrun in microphone input stream
 - `2026-07-08 17:34:05`: style: format imports and docstrings according to PEP8 standards
+- `2026-07-09 10:11:28`: feat(nlp): support fuzzy scored matching for custom application aliases
