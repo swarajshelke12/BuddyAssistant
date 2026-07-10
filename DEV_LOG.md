@@ -405,3 +405,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-09 10:11:28`: feat(nlp): support fuzzy scored matching for custom application aliases
 - `2026-07-09 21:05:39`: docs: add voice command shortcuts and wake-word configuration guide
 - `2026-07-09 21:09:22`: feat(metrics): track command execution latency and recognition accuracy
+- `2026-07-10 15:58:42`: refactor(core): modularize listener loop and session timeout handler
