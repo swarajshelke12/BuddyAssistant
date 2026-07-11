@@ -407,3 +407,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-09 21:09:22`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-07-10 15:58:42`: refactor(core): modularize listener loop and session timeout handler
 - `2026-07-10 16:08:10`: fix(hotkey): resolve keyboard listener conflict on background threads
+- `2026-07-11 15:53:35`: test(parser): add test coverage for compound voice commands
