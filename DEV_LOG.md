@@ -409,3 +409,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-10 16:08:10`: fix(hotkey): resolve keyboard listener conflict on background threads
 - `2026-07-11 15:53:35`: test(parser): add test coverage for compound voice commands
 - `2026-07-11 18:12:41`: feat(agent): add support for chained multi-action query execution
+- `2026-07-12 22:49:28`: refactor: extract command execution into dedicated dispatcher module
