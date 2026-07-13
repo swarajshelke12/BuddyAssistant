@@ -412,3 +412,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-12 22:49:28`: refactor: extract command execution into dedicated dispatcher module
 - `2026-07-12 17:53:51`: refactor(ui): streamline terminal status feedback and color logging
 - `2026-07-12 12:19:21`: chore: update gitignore for virtual environment and cache files
+- `2026-07-13 16:27:02`: refactor(core): modularize listener loop and session timeout handler
