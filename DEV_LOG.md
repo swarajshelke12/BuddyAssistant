@@ -414,3 +414,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-12 12:19:21`: chore: update gitignore for virtual environment and cache files
 - `2026-07-13 16:27:02`: refactor(core): modularize listener loop and session timeout handler
 - `2026-07-14 14:00:10`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
+- `2026-07-14 17:55:41`: chore: update gitignore for virtual environment and cache files
