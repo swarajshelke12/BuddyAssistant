@@ -417,3 +417,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-14 17:55:41`: chore: update gitignore for virtual environment and cache files
 - `2026-07-15 20:37:37`: fix(hotkey): resolve keyboard listener conflict on background threads
 - `2026-07-15 17:55:55`: fix(safety): enforce critical system process protection blacklist
+- `2026-07-15 11:34:13`: feat(automation): integrate Windows task management and app discovery
