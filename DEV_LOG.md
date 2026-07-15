@@ -416,3 +416,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-14 14:00:10`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
 - `2026-07-14 17:55:41`: chore: update gitignore for virtual environment and cache files
 - `2026-07-15 20:37:37`: fix(hotkey): resolve keyboard listener conflict on background threads
+- `2026-07-15 17:55:55`: fix(safety): enforce critical system process protection blacklist
