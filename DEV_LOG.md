@@ -418,3 +418,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-15 20:37:37`: fix(hotkey): resolve keyboard listener conflict on background threads
 - `2026-07-15 17:55:55`: fix(safety): enforce critical system process protection blacklist
 - `2026-07-15 11:34:13`: feat(automation): integrate Windows task management and app discovery
+- `2026-07-16 16:29:44`: perf: optimize fuzzy matching index for installed Windows applications
