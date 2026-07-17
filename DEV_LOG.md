@@ -421,3 +421,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-16 16:29:44`: perf: optimize fuzzy matching index for installed Windows applications
 - `2026-07-17 14:02:06`: feat(logging): add structured debug logger for speech recognition events
 - `2026-07-17 11:01:00`: feat(agent): add support for chained multi-action query execution
+- `2026-07-17 11:06:46`: feat(launcher): support browser URL and desktop shortcut routing
