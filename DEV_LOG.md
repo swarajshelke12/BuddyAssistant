@@ -422,3 +422,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-17 14:02:06`: feat(logging): add structured debug logger for speech recognition events
 - `2026-07-17 11:01:00`: feat(agent): add support for chained multi-action query execution
 - `2026-07-17 11:06:46`: feat(launcher): support browser URL and desktop shortcut routing
+- `2026-07-19 14:52:47`: refactor: extract command execution into dedicated dispatcher module
