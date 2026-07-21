@@ -426,3 +426,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-20 20:09:46`: perf: optimize fuzzy matching index for installed Windows applications
 - `2026-07-21 17:21:26`: test: mock microphone input stream for automated CI test suite
 - `2026-07-21 10:18:25`: fix(core): prevent accidental concurrent instances of audio capture loop
+- `2026-07-21 12:22:00`: feat(stt): implement energy threshold auto-calibration for noisy rooms
