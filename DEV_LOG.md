@@ -427,3 +427,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-21 17:21:26`: test: mock microphone input stream for automated CI test suite
 - `2026-07-21 10:18:25`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2026-07-21 12:22:00`: feat(stt): implement energy threshold auto-calibration for noisy rooms
+- `2026-07-23 21:51:03`: fix(core): prevent accidental concurrent instances of audio capture loop
