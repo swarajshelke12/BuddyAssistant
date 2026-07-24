@@ -429,3 +429,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-21 12:22:00`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-07-23 21:51:03`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2026-07-23 15:13:49`: feat(logging): add structured debug logger for speech recognition events
+- `2026-07-24 12:45:41`: docs: document system architecture and execution flow in technical notes
