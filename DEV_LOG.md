@@ -431,3 +431,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-23 15:13:49`: feat(logging): add structured debug logger for speech recognition events
 - `2026-07-24 12:45:41`: docs: document system architecture and execution flow in technical notes
 - `2026-07-27 12:01:40`: feat(config): add external config loader for customizable wake phrases
+- `2026-07-27 17:59:24`: feat(config): add external config loader for customizable wake phrases
