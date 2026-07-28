@@ -433,3 +433,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-27 12:01:40`: feat(config): add external config loader for customizable wake phrases
 - `2026-07-27 17:59:24`: feat(config): add external config loader for customizable wake phrases
 - `2026-07-28 17:08:26`: fix(listener): handle ambient noise calibration timeout gracefully
+- `2026-07-28 10:21:21`: fix(audio): resolve buffer underrun in microphone input stream
