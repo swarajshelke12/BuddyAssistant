@@ -435,3 +435,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-28 17:08:26`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2026-07-28 10:21:21`: fix(audio): resolve buffer underrun in microphone input stream
 - `2026-07-28 21:51:01`: refactor(ui): streamline terminal status feedback and color logging
+- `2026-07-28 10:06:38`: chore(deps): bump pyaudio and speechrecognition dependencies
