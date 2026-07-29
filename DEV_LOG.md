@@ -439,3 +439,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-28 22:55:08`: feat(automation): integrate Windows task management and app discovery
 - `2026-07-29 10:40:00`: test: mock microphone input stream for automated CI test suite
 - `2026-07-29 12:13:18`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2026-07-29 20:56:50`: perf: reduce wake word latency by caching audio buffers
