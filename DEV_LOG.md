@@ -443,3 +443,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-29 10:46:38`: perf: optimize regex pattern compilation in voice parser
 - `2026-07-29 21:20:33`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-07-30 15:34:47`: test(parser): add test coverage for compound voice commands
+- `2026-07-30 14:11:06`: feat(config): add external config loader for customizable wake phrases
