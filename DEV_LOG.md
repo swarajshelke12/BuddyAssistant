@@ -445,3 +445,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-30 15:34:47`: test(parser): add test coverage for compound voice commands
 - `2026-07-30 14:11:06`: feat(config): add external config loader for customizable wake phrases
 - `2026-07-31 21:16:40`: refactor: extract command execution into dedicated dispatcher module
+- `2026-07-31 16:10:33`: fix(hotkey): resolve keyboard listener conflict on background threads
