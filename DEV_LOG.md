@@ -448,3 +448,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-07-31 16:10:33`: fix(hotkey): resolve keyboard listener conflict on background threads
 - `2026-07-31 18:20:07`: refactor(dispatcher): use scoring algorithm for ambiguous application names
 - `2026-08-01 22:54:29`: refactor: extract command execution into dedicated dispatcher module
+- `2026-08-01 16:02:36`: test: mock microphone input stream for automated CI test suite
