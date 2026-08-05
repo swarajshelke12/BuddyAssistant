@@ -452,3 +452,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-03 11:39:39`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-08-04 20:44:50`: feat(config): add external config loader for customizable wake phrases
 - `2026-08-04 21:28:51`: test: mock microphone input stream for automated CI test suite
+- `2026-08-05 14:34:27`: feat(metrics): track command execution latency and recognition accuracy
