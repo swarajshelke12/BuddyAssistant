@@ -455,3 +455,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-05 14:34:27`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-08-06 22:57:17`: refactor: extract command execution into dedicated dispatcher module
 - `2026-08-06 18:15:31`: feat(nlp): support fuzzy scored matching for custom application aliases
+- `2026-08-06 21:49:19`: docs: add troubleshooting steps for microphone access permissions
