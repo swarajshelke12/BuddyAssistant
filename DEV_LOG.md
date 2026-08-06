@@ -454,3 +454,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-04 21:28:51`: test: mock microphone input stream for automated CI test suite
 - `2026-08-05 14:34:27`: feat(metrics): track command execution latency and recognition accuracy
 - `2026-08-06 22:57:17`: refactor: extract command execution into dedicated dispatcher module
+- `2026-08-06 18:15:31`: feat(nlp): support fuzzy scored matching for custom application aliases
