@@ -459,3 +459,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-07 16:07:20`: fix(tts): resolve voice speed and volume clipping on Windows SAPI5
 - `2026-08-07 18:55:09`: fix(audio): resolve buffer underrun in microphone input stream
 - `2026-08-08 14:50:54`: feat(logging): add structured debug logger for speech recognition events
+- `2026-08-08 11:39:19`: docs: add troubleshooting steps for microphone access permissions
