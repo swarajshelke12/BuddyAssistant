@@ -463,3 +463,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-09 16:40:52`: test(parser): add test coverage for compound voice commands
 - `2026-08-11 12:04:42`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2026-08-11 21:18:57`: refactor(core): modularize listener loop and session timeout handler
+- `2026-08-11 14:23:14`: feat(automation): integrate Windows task management and app discovery
