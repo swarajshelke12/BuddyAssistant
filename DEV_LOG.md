@@ -461,3 +461,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-08 14:50:54`: feat(logging): add structured debug logger for speech recognition events
 - `2026-08-08 11:39:19`: docs: add troubleshooting steps for microphone access permissions
 - `2026-08-09 16:40:52`: test(parser): add test coverage for compound voice commands
+- `2026-08-11 12:04:42`: fix(core): prevent accidental concurrent instances of audio capture loop
