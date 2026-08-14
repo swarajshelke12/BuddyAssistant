@@ -467,3 +467,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-12 10:26:15`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-08-13 15:25:48`: docs: update project roadmap and supported voice command catalog
 - `2026-08-14 17:31:18`: chore: update gitignore for virtual environment and cache files
+- `2026-08-14 18:07:46`: fix(core): prevent accidental concurrent instances of audio capture loop
