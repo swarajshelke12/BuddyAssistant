@@ -469,3 +469,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-14 17:31:18`: chore: update gitignore for virtual environment and cache files
 - `2026-08-14 18:07:46`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2026-08-17 11:47:14`: test(parser): add test coverage for compound voice commands
+- `2026-08-17 16:20:11`: fix(hotkey): resolve keyboard listener conflict on background threads
