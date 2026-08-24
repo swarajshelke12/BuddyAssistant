@@ -476,3 +476,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-20 22:47:16`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-08-20 15:39:44`: docs: add troubleshooting steps for microphone access permissions
 - `2026-08-24 17:20:54`: fix(listener): handle ambient noise calibration timeout gracefully
+- `2026-08-24 10:01:51`: feat(automation): integrate Windows task management and app discovery
