@@ -480,3 +480,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-24 21:54:32`: refactor: extract command execution into dedicated dispatcher module
 - `2026-08-25 12:02:34`: docs: update project roadmap and supported voice command catalog
 - `2026-08-25 18:43:32`: feat(launcher): support browser URL and desktop shortcut routing
+- `2026-08-25 15:15:49`: chore: clean up deprecated audio helper functions
