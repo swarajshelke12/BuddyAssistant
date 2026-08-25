@@ -479,3 +479,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-24 10:01:51`: feat(automation): integrate Windows task management and app discovery
 - `2026-08-24 21:54:32`: refactor: extract command execution into dedicated dispatcher module
 - `2026-08-25 12:02:34`: docs: update project roadmap and supported voice command catalog
+- `2026-08-25 18:43:32`: feat(launcher): support browser URL and desktop shortcut routing
