@@ -482,3 +482,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-25 18:43:32`: feat(launcher): support browser URL and desktop shortcut routing
 - `2026-08-25 15:15:49`: chore: clean up deprecated audio helper functions
 - `2026-08-25 20:32:36`: feat(stt): implement energy threshold auto-calibration for noisy rooms
+- `2026-08-26 20:45:44`: refactor(core): modularize listener loop and session timeout handler
