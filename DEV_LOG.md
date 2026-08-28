@@ -485,3 +485,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-26 20:45:44`: refactor(core): modularize listener loop and session timeout handler
 - `2026-08-27 20:39:50`: docs: update project roadmap and supported voice command catalog
 - `2026-08-28 12:49:20`: refactor(ui): streamline terminal status feedback and color logging
+- `2026-08-28 15:39:24`: chore: update gitignore for virtual environment and cache files
