@@ -488,3 +488,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-28 15:39:24`: chore: update gitignore for virtual environment and cache files
 - `2026-08-30 14:23:34`: chore: update gitignore for virtual environment and cache files
 - `2026-08-31 21:47:33`: docs: add voice command shortcuts and wake-word configuration guide
+- `2026-08-31 22:28:23`: feat(launcher): support browser URL and desktop shortcut routing
