@@ -487,3 +487,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-08-28 12:49:20`: refactor(ui): streamline terminal status feedback and color logging
 - `2026-08-28 15:39:24`: chore: update gitignore for virtual environment and cache files
 - `2026-08-30 14:23:34`: chore: update gitignore for virtual environment and cache files
+- `2026-08-31 21:47:33`: docs: add voice command shortcuts and wake-word configuration guide
