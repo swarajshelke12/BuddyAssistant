@@ -495,3 +495,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-04 16:27:54`: feat(launcher): support browser URL and desktop shortcut routing
 - `2026-09-04 20:10:36`: docs: document system architecture and execution flow in technical notes
 - `2026-09-04 15:45:41`: chore(deps): bump pyaudio and speechrecognition dependencies
+- `2026-09-06 17:03:46`: chore: clean up deprecated audio helper functions
