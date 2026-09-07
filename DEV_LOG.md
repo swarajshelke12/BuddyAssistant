@@ -498,3 +498,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-06 17:03:46`: chore: clean up deprecated audio helper functions
 - `2026-09-06 15:38:14`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-09-07 21:58:10`: test(parser): add test coverage for compound voice commands
+- `2026-09-07 12:11:41`: fix(audio): resolve buffer underrun in microphone input stream
