@@ -505,3 +505,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-11 17:52:35`: feat(stt): implement energy threshold auto-calibration for noisy rooms
 - `2026-09-14 18:06:31`: chore: clean up deprecated audio helper functions
 - `2026-09-14 20:17:31`: fix(core): prevent accidental concurrent instances of audio capture loop
+- `2026-09-14 14:26:41`: chore(deps): bump pyaudio and speechrecognition dependencies
