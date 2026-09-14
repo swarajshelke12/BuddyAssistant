@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "name": "Hermes Voice Assistant",
+  "description": "Voice-activated assistant for opening/closing apps and browser tabs. Wake word: 'Hey Hermes'",
+  "author": "Hermes Agent",
+  "entry_point": "hermes_assistant.py",
+  "requirements": [
+    "speechrecognition>=3.17.0",
+    "pyttsx3>=2.99",
+    "pyaudio>=0.2.14"
+  ],
+  "commands": {
+    "open_app": "Open an application (e.g., 'Open Chrome', 'Open File Explorer')",
+    "close_app": "Close an application (e.g., 'Close Chrome', 'Close Notepad')",
+    "open_web": "Open website in browser (e.g., 'Open Google in Chrome', 'Open Indian passport website')",
+    "new_tab": "Open new tab in browser ('New tab')",
+    "close_tab": "Close current tab ('Close tab')",
+    "exit": "Stop the assistant ('Stop', 'Exit', 'Goodbye')"
+  },
+  "supported_apps": [
+    "Wispr Flow", "Comet", "Chrome", "File Explorer", "Notepad", 
+    "Calculator", "Command Prompt", "PowerShell", "Windows Terminal",
+    "Settings", "Control Panel", "Task Manager", "Discord", "Spotify",
+    "Slack", "Teams", "Zoom", "VS Code"
+  ],
+  "supported_websites": [
+    "Indian Passport (passportindia.gov.in)", "Google", "YouTube", "GitHub",
+    "Gmail", "Google Drive", "Google Maps", "Google Translate",
+    "Wikipedia", "Stack Overflow", "Reddit", "Twitter/X", "LinkedIn",
+    "Facebook", "Instagram", "WhatsApp Web", "Telegram Web",
+    "Netflix", "Amazon India", "Flipkart"
+  ]
+}
