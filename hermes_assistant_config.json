@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
-  "name": "Hermes Voice Assistant",
-  "description": "Voice-activated assistant for opening/closing apps and browser tabs. Wake word: 'Hey Hermes'",
+  "version": "1.1.0",
+  "name": "Hermes Voice Assistant (SAFETY FIXED)",
+  "description": "Voice-activated assistant for opening/closing apps and browser tabs. Wake word: 'Hey Hermes'. v1.1.0: Added CRITICAL_PROCESS_BLACKLIST to prevent system lockup.",
   "author": "Hermes Agent",
   "entry_point": "hermes_assistant.py",
   "requirements": [
