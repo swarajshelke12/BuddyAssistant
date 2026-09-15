@@ -507,3 +507,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-14 20:17:31`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2026-09-14 14:26:41`: chore(deps): bump pyaudio and speechrecognition dependencies
 - `2026-09-14 12:06:24`: chore: update gitignore for virtual environment and cache files
+- `2026-09-15 15:39:49`: fix(safety): enforce critical system process protection blacklist
