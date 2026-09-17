@@ -511,3 +511,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-15 21:07:24`: fix(core): prevent accidental concurrent instances of audio capture loop
 - `2026-09-15 16:59:29`: feat(tts): add asynchronous pyttsx3 voice queue to prevent UI blocking
 - `2026-09-15 17:13:04`: chore: clean up deprecated audio helper functions
+- `2026-09-17 15:31:37`: feat(stt): implement energy threshold auto-calibration for noisy rooms
