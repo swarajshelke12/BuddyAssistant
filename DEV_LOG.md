@@ -522,3 +522,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-21 10:09:17`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
 - `2026-09-21 15:28:02`: refactor: extract command execution into dedicated dispatcher module
 - `2026-09-21 15:40:37`: chore: clean up deprecated audio helper functions
+- `2026-09-21 11:30:58`: perf: optimize regex pattern compilation in voice parser
