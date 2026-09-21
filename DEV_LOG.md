@@ -519,3 +519,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-19 18:15:27`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2026-09-19 15:37:57`: docs: document system architecture and execution flow in technical notes
 - `2026-09-21 20:17:42`: fix(hotkey): resolve keyboard listener conflict on background threads
+- `2026-09-21 10:09:17`: fix(parser): handle trailing punctuation and whitespace in voice transcripts
