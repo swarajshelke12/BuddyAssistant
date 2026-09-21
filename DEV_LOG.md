@@ -518,3 +518,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-18 22:33:56`: test: mock microphone input stream for automated CI test suite
 - `2026-09-19 18:15:27`: fix(listener): handle ambient noise calibration timeout gracefully
 - `2026-09-19 15:37:57`: docs: document system architecture and execution flow in technical notes
+- `2026-09-21 20:17:42`: fix(hotkey): resolve keyboard listener conflict on background threads
