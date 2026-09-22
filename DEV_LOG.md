@@ -524,3 +524,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-21 15:40:37`: chore: clean up deprecated audio helper functions
 - `2026-09-21 11:30:58`: perf: optimize regex pattern compilation in voice parser
 - `2026-09-22 16:34:33`: perf: optimize regex pattern compilation in voice parser
+- `2026-09-22 20:28:55`: fix(listener): handle ambient noise calibration timeout gracefully
