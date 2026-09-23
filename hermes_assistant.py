@@ -22,31 +22,179 @@ from modules import file_control
 WAKE_WORDS = ["hey buddy", "hey hermes", "hey jarvis"]
 SESSION_TIMEOUT = 60.0  # seconds before going back to standby
 
-# ── Conversational responses ─────────────────────────────
+# ── Conversational Personality ────────────────────────────
+# Hermes speaks like a real person — varied, warm, natural.
+
 RESPONSES = {
     "greeting": [
-        "Hello! How can I help?",
-        "Hey! What do you need?",
-        "Hi! I'm ready.",
-        "What's up? How can I assist?",
+        "Hey there! What can I do for you?",
+        "What's up? I'm all ears.",
+        "Hi! I'm right here, what do you need?",
+        "Hey! Good to hear from you. What's on your mind?",
+        "Hello! Fire away, I'm ready.",
     ],
     "exit": [
-        "Goodbye! Have a great day.",
-        "See you later!",
-        "Bye! Call me when you need me.",
+        "Alright, take care! I'll be here if you need me.",
+        "Goodbye! Don't be a stranger.",
+        "See ya! Just call my name when you're back.",
+        "Catch you later! Have a good one.",
+        "Bye for now! I'll keep the lights on.",
     ],
     "error": [
-        "I didn't quite catch that. Could you try again?",
-        "Hmm, I'm not sure what you mean.",
-        "Could you rephrase that?",
-        "I didn't understand. Try again?",
+        "Hmm, I didn't quite get that. Mind saying it again?",
+        "Sorry, that went over my head. Could you try again?",
+        "I missed that one. Can you rephrase?",
+        "Not sure I followed. One more time?",
+        "I'm drawing a blank on that. What did you mean?",
     ],
     "denied": [
-        "Sorry, I don't have permission to do that.",
-        "That's outside what I'm allowed to do.",
-        "I can only open and close apps, control your browser, and open common folders.",
+        "Ah, that's outside my wheelhouse. I can help with apps, browser stuff, and folders though!",
+        "Sorry, I'm not allowed to do that one. But I can open apps, search the web, or open your folders.",
+        "I wish I could, but that's beyond my permissions. Anything else I can help with?",
+    ],
+    "wake": [
+        "Yes?",
+        "I'm here!",
+        "What's up?",
+        "Hey! What do you need?",
+        "Right here. Go ahead.",
+        "Listening!",
+    ],
+    "wake_with_command": [
+        "On it!",
+        "Got it, let me handle that.",
+        "Sure thing!",
+        "Right away.",
+    ],
+    "multi_done": [
+        "All taken care of!",
+        "Done and done.",
+        "Everything's set.",
+        "All sorted!",
+    ],
+    "session_timeout": [
+        "Alright, I'll be on standby. Just say my name when you need me.",
+        "Going quiet for now. Call me anytime!",
+        "I'll be right here whenever you're ready.",
     ],
 }
+
+# ── Human-like response wrappers per action type ─────────
+# These replace the robotic module return messages with natural speech.
+
+SUCCESS_PHRASES = {
+    "open_app": [
+        "Opening {target} for you.",
+        "Sure, firing up {target}.",
+        "Launching {target} right now.",
+        "{target} is coming right up.",
+        "Here comes {target}.",
+        "You got it, starting {target}.",
+    ],
+    "close_app": [
+        "Closing {target}.",
+        "Shutting {target} down.",
+        "Done, {target} is closed.",
+        "{target} is out of the way.",
+        "Consider {target} closed.",
+    ],
+    "browser_search": [
+        "Searching for {target} now.",
+        "Let me look that up for you.",
+        "On it, searching {target}.",
+        "Looking up {target}.",
+    ],
+    "browser_new_tab": [
+        "New tab opened.",
+        "Here's a fresh tab for you.",
+        "Got you a new tab.",
+    ],
+    "browser_close_tab": [
+        "Tab closed.",
+        "Gone, that tab's closed.",
+        "Done, tab is out of here.",
+    ],
+    "browser_navigate": [
+        "Taking you to {target}.",
+        "Heading to {target} now.",
+        "On our way to {target}.",
+    ],
+    "browser_back": [
+        "Going back.",
+        "Taking you back.",
+        "Stepping back a page.",
+    ],
+    "browser_forward": [
+        "Going forward.",
+        "Moving ahead.",
+    ],
+    "browser_refresh": [
+        "Refreshing the page.",
+        "Page refreshed.",
+        "Here, nice and fresh.",
+    ],
+    "browser_incognito": [
+        "Opening a private window for you.",
+        "Incognito mode, nice and private.",
+        "Here's your incognito window.",
+    ],
+    "browser_next_tab": [
+        "Switched to the next tab.",
+        "Moving to the next one.",
+        "Here's your next tab.",
+    ],
+    "browser_prev_tab": [
+        "Switched to the previous tab.",
+        "Going back a tab.",
+    ],
+    "browser_zoom_in": ["Zoomed in.", "Bigger? You got it."],
+    "browser_zoom_out": ["Zoomed out.", "Made it smaller."],
+    "browser_scroll_down": ["Scrolling down.", "Going down."],
+    "browser_scroll_up": ["Scrolling up.", "Going back up."],
+    "browser_bookmark": ["Page bookmarked!", "Saved that bookmark."],
+    "browser_history": ["Here's your history.", "Opening your browsing history."],
+    "browser_downloads": ["Opening your downloads.", "Here are your downloads."],
+    "browser_find": ["Find bar is open.", "Here, search away."],
+    "file_open": [
+        "Opening your {target} folder.",
+        "Here's your {target}.",
+        "Pulling up {target} for you.",
+    ],
+    "file_search": [
+        "Let me look through your files.",
+        "Searching your folders now.",
+    ],
+}
+
+FAILURE_PHRASES = [
+    "Hmm, I ran into a problem with that.",
+    "That didn't quite work. Want me to try again?",
+    "I had some trouble with that one.",
+    "Oops, something went wrong there.",
+    "I couldn't quite pull that off.",
+]
+
+
+def humanize(intent, target, ok, raw_msg):
+    """Turn a raw module response into a natural, human-like message."""
+    if not ok:
+        # For failures, use the raw message if it's informative, else a generic one
+        if raw_msg and len(raw_msg) > 10:
+            return raw_msg
+        return random.choice(FAILURE_PHRASES)
+
+    # For successes, pick a personality-rich template
+    templates = SUCCESS_PHRASES.get(intent)
+    if templates:
+        phrase = random.choice(templates)
+        # Fill in {target} if present
+        display_target = target.capitalize() if target else "that"
+        return phrase.format(target=display_target)
+
+    # Fallback: use raw message or generic
+    if raw_msg:
+        return raw_msg
+    return random.choice(["Done.", "All set.", "You got it."])
 
 
 class Hermes:
@@ -129,11 +277,12 @@ class Hermes:
     def dispatch(self, cmd):
         """Route a Command to the correct handler.
         ONLY allows: apps, browser, common folders.
+        Returns (success, human_response).
         """
         intent = cmd.intent
         target = cmd.target
 
-        # ── Exit / Greeting ──────────────────────────────────
+        # ── Exit / Greeting (direct personality) ─────────────
         if intent == "exit":
             self.speak(random.choice(RESPONSES["exit"]))
             self.running = False
@@ -142,69 +291,73 @@ class Hermes:
         if intent == "greeting":
             return True, random.choice(RESPONSES["greeting"])
 
-        # ── Browser (ALLOWED) ────────────────────────────────
+        # ── Route to module, then humanize the response ──────
+        ok, raw_msg = False, ""
+
+        # Browser
         if intent == "browser_search":
-            return browser_control.search(target)
-        if intent == "browser_new_tab":
-            return browser_control.new_tab()
-        if intent == "browser_close_tab":
-            return browser_control.close_tab()
-        if intent == "browser_next_tab":
-            return browser_control.next_tab()
-        if intent == "browser_prev_tab":
-            return browser_control.prev_tab()
-        if intent == "browser_navigate":
-            return browser_control.navigate(target)
-        if intent == "browser_back":
-            return browser_control.go_back()
-        if intent == "browser_forward":
-            return browser_control.go_forward()
-        if intent == "browser_refresh":
-            return browser_control.refresh()
-        if intent == "browser_incognito":
-            return browser_control.open_incognito()
-        if intent == "browser_zoom_in":
-            return browser_control.zoom_in()
-        if intent == "browser_zoom_out":
-            return browser_control.zoom_out()
-        if intent == "browser_find":
-            return browser_control.find_on_page(target)
-        if intent == "browser_bookmark":
-            return browser_control.bookmark()
-        if intent == "browser_history":
-            return browser_control.open_history()
-        if intent == "browser_downloads":
-            return browser_control.open_downloads()
-        if intent == "browser_scroll_down":
-            return browser_control.scroll_down()
-        if intent == "browser_scroll_up":
-            return browser_control.scroll_up()
+            ok, raw_msg = browser_control.search(target)
+        elif intent == "browser_new_tab":
+            ok, raw_msg = browser_control.new_tab()
+        elif intent == "browser_close_tab":
+            ok, raw_msg = browser_control.close_tab()
+        elif intent == "browser_next_tab":
+            ok, raw_msg = browser_control.next_tab()
+        elif intent == "browser_prev_tab":
+            ok, raw_msg = browser_control.prev_tab()
+        elif intent == "browser_navigate":
+            ok, raw_msg = browser_control.navigate(target)
+        elif intent == "browser_back":
+            ok, raw_msg = browser_control.go_back()
+        elif intent == "browser_forward":
+            ok, raw_msg = browser_control.go_forward()
+        elif intent == "browser_refresh":
+            ok, raw_msg = browser_control.refresh()
+        elif intent == "browser_incognito":
+            ok, raw_msg = browser_control.open_incognito()
+        elif intent == "browser_zoom_in":
+            ok, raw_msg = browser_control.zoom_in()
+        elif intent == "browser_zoom_out":
+            ok, raw_msg = browser_control.zoom_out()
+        elif intent == "browser_find":
+            ok, raw_msg = browser_control.find_on_page(target)
+        elif intent == "browser_bookmark":
+            ok, raw_msg = browser_control.bookmark()
+        elif intent == "browser_history":
+            ok, raw_msg = browser_control.open_history()
+        elif intent == "browser_downloads":
+            ok, raw_msg = browser_control.open_downloads()
+        elif intent == "browser_scroll_down":
+            ok, raw_msg = browser_control.scroll_down()
+        elif intent == "browser_scroll_up":
+            ok, raw_msg = browser_control.scroll_up()
 
-        # ── Open common folders (ALLOWED — whitelisted only) ─
-        if intent == "file_open":
-            return file_control.open_folder(target)
+        # Folders
+        elif intent == "file_open":
+            ok, raw_msg = file_control.open_folder(target)
+        elif intent == "file_search":
+            ok, raw_msg = file_control.search_files(target)
+            # Search results are already descriptive — use them directly
+            return ok, raw_msg
 
-        # ── Search files (ALLOWED — read-only, common folders) ─
-        if intent == "file_search":
-            return file_control.search_files(target)
-
-        # ── Open/close apps (ALLOWED) ────────────────────────
-        if intent == "close_app":
-            ok, msg = self.app_ctrl.close_app(target)
+        # Apps
+        elif intent == "close_app":
+            ok, raw_msg = self.app_ctrl.close_app(target)
             if ok and target:
                 self.context["last_closed"].append(target)
                 self.context["last_closed"] = self.context["last_closed"][-5:]
-            return ok, msg
-
-        if intent == "open_app":
-            ok, msg = self.app_ctrl.open_app(target)
+        elif intent == "open_app":
+            ok, raw_msg = self.app_ctrl.open_app(target)
             if ok and target:
                 self.context["last_opened"].append(target)
                 self.context["last_opened"] = self.context["last_opened"][-5:]
-            return ok, msg
 
-        # ── Everything else: DENIED ──────────────────────────
-        return False, random.choice(RESPONSES["denied"])
+        # Unknown → DENIED
+        else:
+            return False, random.choice(RESPONSES["denied"])
+
+        # Convert raw response into human-like speech
+        return ok, humanize(intent, target, ok, raw_msg)
 
     # ── Main Loop ─────────────────────────────────────────────
 
@@ -252,14 +405,15 @@ class Hermes:
                 self.session_start = time.time()
 
                 if remaining:
+                    # Wake word + command together — acknowledge then execute
                     print(f"[CMD] '{remaining}'")
                     commands = nlp_engine.parse(remaining, self.context)
                     if commands:
                         self._execute_commands(commands)
                     else:
-                        self.speak("Yes? I'm listening.")
+                        self.speak(random.choice(RESPONSES["wake"]))
                 else:
-                    self.speak("Yes?")
+                    self.speak(random.choice(RESPONSES["wake"]))
                 continue
 
             # If in active session, process commands directly
@@ -267,7 +421,7 @@ class Hermes:
                 if time.time() - self.session_start > SESSION_TIMEOUT:
                     self.in_session = False
                     print("[SESSION] Timed out")
-                    self.speak("Going back to standby. Call me when you need me.")
+                    self.speak(random.choice(RESPONSES["session_timeout"]))
                     continue
 
                 print(f"[CMD] '{txt}'")
@@ -281,7 +435,7 @@ class Hermes:
             time.sleep(0.1)
 
     def _execute_commands(self, commands):
-        """Execute a list of parsed commands."""
+        """Execute a list of parsed commands with natural responses."""
         for cmd in commands:
             ok, response = self.dispatch(cmd)
             if not self.running:
@@ -292,7 +446,7 @@ class Hermes:
                 time.sleep(0.3)
 
         if len(commands) > 1:
-            self.speak("All done.")
+            self.speak(random.choice(RESPONSES["multi_done"]))
 
 
 # ── Test Mode ─────────────────────────────────────────────────
