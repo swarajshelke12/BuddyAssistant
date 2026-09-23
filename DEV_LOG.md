@@ -525,3 +525,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-21 11:30:58`: perf: optimize regex pattern compilation in voice parser
 - `2026-09-22 16:34:33`: perf: optimize regex pattern compilation in voice parser
 - `2026-09-22 20:28:55`: fix(listener): handle ambient noise calibration timeout gracefully
+- `2026-09-23 20:31:02`: docs: add troubleshooting steps for microphone access permissions
