@@ -184,6 +184,10 @@ class Hermes:
         if intent == "file_open":
             return file_control.open_folder(target)
 
+        # ── Search files (ALLOWED — read-only, common folders) ─
+        if intent == "file_search":
+            return file_control.search_files(target)
+
         # ── Open/close apps (ALLOWED) ────────────────────────
         if intent == "close_app":
             ok, msg = self.app_ctrl.close_app(target)

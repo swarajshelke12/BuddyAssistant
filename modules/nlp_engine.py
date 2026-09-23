@@ -125,6 +125,12 @@ INTENT_PATTERNS = [
         r"(?:open|show|go\s+to)\s+(?:my\s+)?(?:the\s+)?(desktop|downloads?|documents?|pictures?|photos?|music|videos?|home|user)\s*(?:folder|directory)?",
     ], []),
 
+    ("file_search", [
+        r"(?:search|look|find|locate)\s+(?:for\s+)?(?:a\s+)?(?:file\s+)?(?:called\s+|named\s+)?(.+?)(?:\s+(?:in|on|from)\s+(?:my\s+)?(?:files|folders|computer))?$",
+        r"(?:do\s+i\s+have|is\s+there)\s+(?:a\s+)?(?:file\s+)?(?:called\s+|named\s+)?(.+?)(?:\s+(?:on|in)\s+(?:my\s+)?(?:computer|laptop|pc))?$",
+    ], []),
+
+
     # ── APP CONTROL ──────────────────────────────────────────
     ("close_app", [
         r"close\s+(.+)",
