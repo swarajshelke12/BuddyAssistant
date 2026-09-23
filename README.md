@@ -309,25 +309,22 @@ flowchart TD
 ```
 BuddyAgent/
 │
-├── buddy_assistant.py            ← Primary entry point & runner
-├── hermes_assistant.py           ← Core orchestrator & backward-compat module
+├── buddy_assistant.py     ← Main assistant application & voice orchestrator
 │
 ├── modules/
-│   ├── nlp_engine.py             ← Intent parser (regex-based, no LLM)
-│   ├── app_control.py            ← Open/close apps, fuzzy index builder
-│   ├── browser_control.py        ← Tab management, search, navigation
-│   └── file_control.py           ← Whitelisted folder access + file search
+│   ├── nlp_engine.py      ← Intent parser (regex-based, zero-LLM)
+│   ├── app_control.py     ← Open/close apps, fuzzy index builder
+│   ├── browser_control.py ← Tab management, web search, navigation
+│   └── file_control.py    ← Whitelisted folder access & safe file search
 │
-├── run_buddy.bat                 ← One-click Windows launcher
-├── run_hermes.bat                ← Legacy launcher
-├── buddy_assistant_config.json   ← Configuration
-├── BUILD.md                      ← Full build history & technical deep-dive
-└── DEV_LOG.md                    ← Engineering changelog
+├── run_buddy.bat          ← One-click Windows desktop launcher
+├── config.json            ← Application & command configuration
+├── BUILD.md               ← Build history & technical architecture
+└── DEV_LOG.md             ← Engineering changelog
 ```
 
 > [!NOTE]
-> **Why do some files contain `hermes` in the name?**  
-> The early foundation and automation experiments for this project were bootstrapped inside the Hermes agent environment. The project's true name and personality is **Buddy Agent** (wake word: *"Hey Buddy"*). Legacy filenames are preserved as aliases so existing shortcuts and scripts never break.
+> **Project Origin**: Early automation experiments for this project were bootstrapped inside the Hermes agent environment. The project is now unified, standalone, and officially named **Buddy Agent** (wake word: *"Hey Buddy"*).
 
 <br />
 

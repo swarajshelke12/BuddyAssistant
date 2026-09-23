@@ -710,10 +710,17 @@ The project is fully functional and documented. It has passed the initial develo
 
 ```
 Desktop/HermesVoiceAssistant/
-├── hermes_assistant.py           ← Main application (441 lines)
-├── hermes_assistant_config.json  ← Configuration file (33 lines)
-├── run_hermes.bat                ← Windows launcher (5 lines)
-└── README.md                     ← Documentation (136 lines)
+├── buddy_assistant.py           ← Main application (voice orchestrator)
+├── config.json                  ← Configuration file
+├── run_buddy.bat                ← Windows one-click launcher
+├── modules/
+│   ├── nlp_engine.py            ← Intent parsing & compound commands
+│   ├── app_control.py           ← Application control & fuzzy matcher
+│   ├── browser_control.py       ← Browser tabs & web navigation
+│   └── file_control.py          ← Folder whitelist & safe file search
+├── README.md                    ← Full documentation & guide
+├── BUILD.md                     ← Architecture & historical notes
+└── DEV_LOG.md                   ← Engineering changelog
 ```
 
 ### Git History
