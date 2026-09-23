@@ -1,4 +1,4 @@
-# Hermes Voice Assistant — Development & Engineering Log
+# Hermes Voice Assistant â€” Development & Engineering Log
 
 Continuous build notes, architectural updates, and iterative improvements.
 
