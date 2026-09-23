@@ -1,136 +1,231 @@
-# Hermes Voice Assistant — Comet Browser & Desktop Control
+# 🎙️ Hermes AI Voice Assistant
 
-Voice-activated assistant with **mandatory wake word** ("Hey Buddy"), **Comet as default browser**, **fuzzy app matching**, and **real Comet tab control**.
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
+
+**An intelligent, low-latency desktop voice assistant and automation agent for Windows.**  
+*Hands-free application management, multi-intent command parsing, browser tab navigation, and built-in system safety protections.*
+
+[Key Features](#-key-features) • [Architecture](#-architecture) • [Quick Start](#-quick-start) • [Command Catalog](#-command-catalog) • [Safety Layer](#-system-safety-layer) • [Configuration](#-configuration)
+
+</div>
+
+---
+
+## 📖 Overview
+
+**Hermes** is a voice agent engineered for Windows power users and developers. It combines real-time acoustic speech recognition, scored fuzzy string matching for system app discovery, compound multi-action command dispatching, and offline text-to-speech feedback.
+
+Hermes operates with a **wake-word activation model ("Hey Buddy")**, entering an active 8-second interactive listening window before safely returning to ambient low-power sleep.
+
+```
+"Hey Buddy, open Spotify and open File Explorer and close Chrome"
+  ├── 1. Wake Detection    ──> Recognizes "Hey Buddy" -> Responds "Yes"
+  ├── 2. Intent Parsing    ──> Splits compound phrase into 3 discrete actions
+  ├── 3. Fuzzy Discovery   ──> Resolves app paths across Start Menu & Program Files
+  ├── 4. Safe Execution    ──> Launches Spotify & Explorer; kills Chrome safely
+  └── 5. Voice Feedback    ──> "Opening Spotify", "Opening File Explorer", "Closed Chrome", "Done"
+```
+
+---
+
+## ✨ Key Features
+
+| Capability | Description |
+| :--- | :--- |
+| **🎙️ Wake-Word Engine** | Continuous background listener calibrated for `"Hey Buddy"` with dynamic ambient noise auto-adjustment. |
+| **🔗 Multi-Intent Parser** | Chained command execution in a single breath (e.g., `"open X and open Y and close Z"`). |
+| **🔍 Scored Fuzzy Discovery** | Automatically indexes Windows Start Menu, Program Files, AppData, and Registry to match spoken names (e.g. `"anti gravity"` → `anti-gravity.exe`). |
+| **🛡️ Bulletproof Safety** | Kernel-level process blacklist preventing voice commands from terminating critical Windows services (`explorer.exe`, `csrss.exe`, `svchost.exe`). |
+| **🌐 Browser & Tab Routing** | Native dispatching to **Comet**, **Google Chrome**, and **Microsoft Edge** with keystroke tab controls (`new tab`, `close tab`, `switch tab`). |
+| **🔊 Non-blocking TTS** | Instant spoken audio feedback on every execution state using native Windows SAPI5. |
+| **🔒 100% Local & Private** | No audio recordings or telemetry are stored on disk or sent to external servers. |
+
+---
+
+## 🏗️ Architecture
+
+```mermaid
+flowchart TD
+    A[Microphone Stream] --> B{Wake Word Engine}
+    B -- "Ambient Audio" --> A
+    B -- "Detected 'Hey Buddy'" --> C[Acoustic Feedback: 'Yes']
+    
+    C --> D[Active 8-Second Listening Window]
+    D --> E[Multi-Intent Tokenizer & Parser]
+    
+    E --> F[Command Dispatcher]
+    
+    F -->|App Launch| G[Fuzzy App Indexer]
+    F -->|Browser / URL| H[Browser Route Dispatcher]
+    F -->|Close / Terminate| I[Safety Blacklist Filter]
+    
+    G --> J[Windows Subprocess API]
+    H --> J
+    I -->|Safe| J
+    I -->|Critical Process Blocked| K[Safety Alert Speech]
+    
+    J --> L[TTS Audio Confirmation Engine]
+    K --> L
+    L --> M[Return to Sleep Mode]
+```
+
+---
 
 ## 🚀 Quick Start
 
-1. Open `Desktop\HermesVoiceAssistant`
-2. Double-click **`run_hermes.bat`**
-3. Wait for: `Hermes ready` + `Waiting for 'Hey Buddy'...`
-4. Speak commands!
+### Prerequisites
+- **OS**: Windows 10 / 11 (64-bit)
+- **Python**: 3.10 or higher
+- **Microphone & Speaker**: Properly configured in Windows sound settings
+
+### Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/swarajshelke12/HermesVoiceAgent.git
+   cd HermesVoiceAgent
+   ```
+
+2. **Set Up a Virtual Environment**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install SpeechRecognition pyttsx3 pyaudio
+   ```
+
+4. **Launch Hermes**
+   ```bash
+   # Option A: Run directly via Python
+   python hermes_assistant.py
+
+   # Option B: Double-click the launcher script
+   run_hermes.bat
+   ```
+
+Once initialized, you will see `Hermes ready` and hear audio confirmation. Say **"Hey Buddy"** to begin.
 
 ---
 
-## 🗣️ Commands (Say "Hey Buddy" first, then your command)
+## 🗣️ Command Catalog
 
-### Open Apps (fuzzy matching — "anti gravity" finds anti-gravity.exe)
-```
-Hey Buddy, open Spotify
-Hey Buddy, open File Explorer and open Spotify and open Notepad
-Hey Buddy, open anti gravity
-Hey Buddy, open Wispr Flow
-Hey Buddy, open Comet
-Hey Buddy, open Chrome
-Hey Buddy, open VS Code
-Hey Buddy, open Settings
-```
+Always wake Hermes with **"Hey Buddy"**, followed by your command(s):
 
-### Close Apps
-```
-Hey Buddy, close Spotify
-Hey Buddy, close Notepad and close Chrome
-Hey Buddy, kill Discord
+### 1. Launching Applications
+Hermes utilizes scored fuzzy search to locate desktop applications, Microsoft Store packages, and local binaries.
+```text
+"Hey Buddy, open Spotify"
+"Hey Buddy, open File Explorer"
+"Hey Buddy, open Visual Studio Code"
+"Hey Buddy, open Anti Gravity"
+"Hey Buddy, open Notepad and open Spotify"
 ```
 
-### Open Websites (default: Comet browser)
-```
-Hey Buddy, open Indian passport website
-Hey Buddy, open Indian passport website on Comet
-Hey Buddy, open Google on Chrome
-Hey Buddy, open YouTube in Edge
-Hey Buddy, open GitHub
-Hey Buddy, open Gmail and GitHub
+### 2. Terminating Applications
+Hermes safely kills user-space processes while strictly rejecting system-critical tasks.
+```text
+"Hey Buddy, close Spotify"
+"Hey Buddy, close Notepad and close Chrome"
+"Hey Buddy, kill Discord"
 ```
 
-### Comet Browser Tabs (real tab control via keystrokes)
-```
-Hey Buddy, new tab
-Hey Buddy, open new tab
-Hey Buddy, close tab
-Hey Buddy, close the tab
-Hey Buddy, switch tab
-Hey Buddy, next tab
-Hey Buddy, previous tab
+### 3. Web & Browser Navigation
+Supports direct website shortcuts and browser targeting (`Comet`, `Chrome`, `Edge`).
+```text
+"Hey Buddy, open GitHub"
+"Hey Buddy, open YouTube in Chrome"
+"Hey Buddy, open Google on Comet"
+"Hey Buddy, open Gmail and open LinkedIn"
 ```
 
-### Folders
-```
-Hey Buddy, open Downloads
-Hey Buddy, open Desktop
-Hey Buddy, open Documents
-```
-
-### Exit
-```
-Hey Buddy, stop
-Hey Buddy, goodbye
-Hey Buddy, quit
+### 4. Comet Browser Tab Management
+Executes native keyboard navigation commands within the active browser window:
+```text
+"Hey Buddy, new tab"        -> Opens new browser tab
+"Hey Buddy, close tab"      -> Closes current active tab
+"Hey Buddy, switch tab"     -> Cycles to next open tab
+"Hey Buddy, previous tab"   -> Returns to previous tab
 ```
 
----
-
-## ⚡ Key Features
-
-| Feature | Details |
-|---------|---------|
-| **Wake Word Required** | Only activates on "Hey Buddy" — ignores everything else |
-| **Default Browser** | Comet (not Chrome). Say "on Chrome" to override |
-| **Fuzzy App Matching** | "anti gravity" → finds `anti-gravity.exe`, `antigravity.exe`, `Anti Gravity.exe` |
-| **Multi-Command** | "open X and Y and Z" executes all in sequence |
-| **Real Tab Control** | Ctrl+T / Ctrl+W / Ctrl+Tab in Comet |
-| **Auto-Sleep** | Returns to listening for "Hey Buddy" after each command batch |
-| **Privacy** | Terminal logs only — nothing saved to disk |
-
----
-
-## 🎯 Examples
-
+### 5. System Folders & Directories
+```text
+"Hey Buddy, open Downloads"
+"Hey Buddy, open Desktop"
+"Hey Buddy, open Documents"
 ```
-You:  Hey Buddy, open Spotify and open File Explorer
-→ Opens Spotify, then File Explorer
-→ Says: "Opening Spotify", "Opening File Explorer"
-→ Returns to sleep
 
-You:  Hey Buddy, open Indian passport website on Comet
-→ Opens passportindia.gov.in in new Comet tab
-→ Says: "Opening Indian passport website"
-
-You:  Hey Buddy, new tab
-→ Ctrl+T in Comet
-→ Says: "New tab"
-
-You:  Hey Buddy, close tab
-→ Ctrl+W in Comet
-→ Says: "Tab closed"
-
-You:  Hey Buddy, switch tab
-→ Ctrl+Tab in Comet
-→ Says: "Switched tab next"
+### 6. Session Termination
+```text
+"Hey Buddy, goodbye"
+"Hey Buddy, stop"
+"Hey Buddy, exit"
 ```
 
 ---
 
-## 🔧 Troubleshooting
+## 🛡️ System Safety Layer
 
-| Issue | Fix |
-|-------|-----|
-| "Hey Buddy" not heard | Speak clearly, closer to mic. Check Energy threshold (should be 40-120). |
-| App not found | App name spoken differently? Try exact name or check it's installed. |
-| Comet not opening | Ensure Comet is installed. Default path: `%LOCALAPPDATA%\Comet\comet.exe` |
-| Website wrong | Say "on Chrome" or "in Edge" to override default Comet. |
+To prevent system lockups, blue screens, or desktop disappearance, Hermes enforces an un-bypassable **Critical Process Blacklist**:
+
+```python
+CRITICAL_PROCESS_BLACKLIST = {
+    "explorer", "csrss", "svchost", "system", 
+    "smss", "wininit", "services", "lsass", "fontdrvhost"
+}
+```
+
+- **Protected System Shell**: Commands like `"close explorer"` or `"kill system"` are immediately intercepted and safely blocked.
+- **Graceful Fallbacks**: Uses scoped window title matching before resorting to force-kill parameters.
 
 ---
 
-## 📁 Files
+## ⚙️ Configuration
+
+Custom system aliases, energy calibration levels, and browser preferences can be tuned in `hermes_assistant_config.json` or at the top of `hermes_assistant.py`:
+
+```json
+{
+  "wake_word": "hey buddy",
+  "command_timeout_seconds": 8.0,
+  "default_browser": "comet",
+  "speech_energy_threshold": 80,
+  "voice_feedback_enabled": true
+}
+```
+
+---
+
+## 📁 Repository Structure
 
 ```
-Desktop/HermesVoiceAssistant/
-├── hermes_assistant.py   # Main script
-├── run_hermes.bat        # Launcher (uses Hermes venv Python)
-└── README_HERMES_ASSISTANT.md
+HermesVoiceAssistant/
+├── hermes_assistant.py          # Core engine (STT, TTS, Parser, Dispatcher)
+├── hermes_assistant_config.json # Runtime preferences and user mappings
+├── run_hermes.bat               # Windows double-click launcher
+├── BUILD.md                     # Detailed build logs and technical architecture
+├── DEV_LOG.md                   # Engineering changelog and release history
+└── README.md                    # Project documentation
 ```
 
-Run: Double-click `run_hermes.bat` or run in terminal:
-```cmd
-"C:\Users\aditi\AppData\Local\hermes\hermes-agent\venv\Scripts\python.exe" hermes_assistant.py
-```
+---
+
+## 👨‍💻 Author
+
+**Swaraj Shelke**  
+*AI Systems & Automation Engineer*  
+- GitHub: [@swarajshelke12](https://github.com/swarajshelke12)  
+- Portfolio: [jexor.studio](https://github.com/swarajshelke12)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
