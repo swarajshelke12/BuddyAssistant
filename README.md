@@ -7,10 +7,10 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
 
-**An intelligent, low-latency desktop voice assistant and automation agent for Windows.**  
+**An intelligent, low-latency desktop voice assistant and automation agent for Windows.**
 *Hands-free application management, multi-intent command parsing, browser tab navigation, and built-in system safety protections.*
 
-[Key Features](#-key-features) • [Architecture](#-architecture) • [Quick Start](#-quick-start) • [Command Catalog](#-command-catalog) • [Safety Layer](#-system-safety-layer) • [Configuration](#-configuration)
+[Key Features](#-key-features) • [Architecture](#-architecture) • [Quick Start](#-quick-start) • [Versions](#-versions) • [Command Catalog](#-command-catalog) • [Safety Layer](#-system-safety-layer) • [Configuration](#-configuration)
 
 </div>
 
@@ -20,16 +20,27 @@
 
 **Hermes** is a voice agent engineered for Windows power users and developers. It combines real-time acoustic speech recognition, scored fuzzy string matching for system app discovery, compound multi-action command dispatching, and offline text-to-speech feedback.
 
-Hermes operates with a **wake-word activation model ("Hey Buddy")**, entering an active 8-second interactive listening window before safely returning to ambient low-power sleep.
+Hermes operates with a **wake-word activation model ("Hey Buddy")**, entering an active interactive listening window before safely returning to ambient low-power sleep.
 
-```
-"Hey Buddy, open Spotify and open File Explorer and close Chrome"
-  ├── 1. Wake Detection    ──> Recognizes "Hey Buddy" -> Responds "Yes"
-  ├── 2. Intent Parsing    ──> Splits compound phrase into 3 discrete actions
-  ├── 3. Fuzzy Discovery   ──> Resolves app paths across Start Menu & Program Files
-  ├── 4. Safe Execution    ──> Launches Spotify & Explorer; kills Chrome safely
-  └── 5. Voice Feedback    ──> "Opening Spotify", "Opening File Explorer", "Closed Chrome", "Done"
-```
+---
+
+## 🚀 Versions
+
+Hermes comes in two editions to suit different preferences:
+
+### 🛡️ **Classic Edition** (Original)
+- Reliable, bulletproof implementation
+- Strict "open X and Y" command parsing
+- 8-second session timeout after wake word
+- Maximum safety with extensive process blacklisting
+
+### 🤖 **Jarvis Edition** (Enhanced)
+- Natural language understanding (like J.A.R.V.I.S. from Iron Man)
+- Conversational English comprehension
+- Context-aware responses ("open it again", "close it")
+- 30-second session timeout for extended conversations
+- More human-like TTS responses
+- Background indexing for faster startup
 
 ---
 
@@ -55,7 +66,7 @@ flowchart TD
     B -- "Ambient Audio" --> A
     B -- "Detected 'Hey Buddy'" --> C[Acoustic Feedback: 'Yes']
     
-    C --> D[Active 8-Second Listening Window]
+    C --> D[Active Listening Window]
     D --> E[Multi-Intent Tokenizer & Parser]
     
     E --> F[Command Dispatcher]
@@ -103,12 +114,23 @@ flowchart TD
    ```
 
 4. **Launch Hermes**
+
+   **Classic Edition:**
    ```bash
    # Option A: Run directly via Python
    python hermes_assistant.py
-
+   
    # Option B: Double-click the launcher script
    run_hermes.bat
+   ```
+
+   **Jarvis Edition:**
+   ```bash
+   # Option A: Run directly via Python
+   python hermes_jarvis.py
+   
+   # Option B: Double-click the launcher script
+   run_hermes_jarvis.bat
    ```
 
 Once initialized, you will see `Hermes ready` and hear audio confirmation. Say **"Hey Buddy"** to begin.
@@ -162,7 +184,18 @@ Executes native keyboard navigation commands within the active browser window:
 "Hey Buddy, open Documents"
 ```
 
-### 6. Session Termination
+### 6. Natural Language Commands (Jarvis Edition Only)
+```text
+"Hey Buddy, can you open Spotify please?"
+"Hey Buddy, I need to check my email"
+"Hey Buddy, close Chrome and open Firefox"
+"Hey Buddy, launch Photoshop and start a new design"
+"Hey Buddy, play some music on Spotify"
+"Hey Buddy, open it again"  # Reopens last opened item
+"Hey Buddy, close it"       # Closes last opened item
+```
+
+### 7. Session Termination
 ```text
 "Hey Buddy, goodbye"
 "Hey Buddy, stop"
@@ -189,7 +222,7 @@ CRITICAL_PROCESS_BLACKLIST = {
 
 ## ⚙️ Configuration
 
-Custom system aliases, energy calibration levels, and browser preferences can be tuned in `hermes_assistant_config.json` or at the top of `hermes_assistant.py`:
+Custom system aliases, energy calibration levels, and browser preferences can be tuned in `hermes_assistant_config.json` or at the top of each Python file:
 
 ```json
 {
@@ -207,9 +240,11 @@ Custom system aliases, energy calibration levels, and browser preferences can be
 
 ```
 HermesVoiceAssistant/
-├── hermes_assistant.py          # Core engine (STT, TTS, Parser, Dispatcher)
+├── hermes_assistant.py          # Core engine (Classic Edition)
+├── hermes_jarvis.py             # Enhanced natural language edition (Jarvis)
 ├── hermes_assistant_config.json # Runtime preferences and user mappings
-├── run_hermes.bat               # Windows double-click launcher
+├── run_hermes.bat               # Windows double-click launcher (Classic)
+├── run_hermes_jarvis.bat        # Windows double-click launcher (Jarvis)
 ├── BUILD.md                     # Detailed build logs and technical architecture
 ├── DEV_LOG.md                   # Engineering changelog and release history
 └── README.md                    # Project documentation
