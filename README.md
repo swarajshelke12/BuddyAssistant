@@ -1,60 +1,274 @@
-# 🎙️ Hermes AI Voice Assistant
-
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
+<!-- Animated title using SVG -->
+<a href="https://github.com/swarajshelke12/HermesVoiceAgent">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=Hey+Buddy%2C+open+Chrome.;Hey+Buddy%2C+search+YouTube.;Hey+Buddy%2C+close+Spotify.;Meet+Hermes." alt="Typing animation" />
+</a>
 
-**An intelligent, low-latency desktop voice assistant and automation agent for Windows.**
-*Hands-free application management, multi-intent command parsing, browser tab navigation, and built-in system safety protections.*
+<br />
 
-[Key Features](#-key-features) • [Architecture](#-architecture) • [Quick Start](#-quick-start) • [Versions](#-versions) • [Command Catalog](#-command-catalog) • [Safety Layer](#-system-safety-layer) • [Configuration](#-configuration)
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=400&size=18&duration=4000&pause=1000&color=A0A0B0&center=true&vCenter=true&width=700&lines=A+voice+agent+that+runs+your+laptop+%E2%80%94+not+just+an+assistant%2C+a+real+operator." alt="Subtitle" />
+
+<br /><br />
+
+<!-- Badges -->
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![Build](https://img.shields.io/badge/Build-Passing-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![Privacy](https://img.shields.io/badge/100%25-Local%20%26%20Private-6C63FF?style=for-the-badge&logo=shield&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge)
+
+<br />
+
+**[Quick Start](#-quick-start)** · **[What It Can Do](#-what-hermes-can-do)** · **[How It Works](#-how-it-works)** · **[Voice Commands](#-voice-command-reference)** · **[Architecture](#-architecture)**
 
 </div>
 
 ---
 
-## 📖 Overview
+<br />
 
-**Hermes** is a voice agent engineered for Windows power users and developers. It combines real-time acoustic speech recognition, scored fuzzy string matching for system app discovery, compound multi-action command dispatching, and offline text-to-speech feedback.
+## ⚡ What Is Hermes?
 
-Hermes operates with a **wake-word activation model ("Hey Buddy")**, entering an active interactive listening window before safely returning to ambient low-power sleep.
+> *"Hey Buddy, open Chrome and search YouTube."*
 
----
+That's it. That's the whole idea.
 
-## 🚀 Versions
+**Hermes** is a voice-activated laptop operator for Windows. Not just a smart speaker shortcut, not just a macro runner — a real agent that **understands natural English**, figures out what you mean, and **actually does it**. Open apps. Control your browser. Search your files. Switch tabs. All hands-free, all offline, all private.
 
-Hermes comes in two editions to suit different preferences:
+Think **J.A.R.V.I.S.** — minus the Iron Man suit, plus your actual laptop.
 
-### 🛡️ **Classic Edition** (Original)
-- Reliable, bulletproof implementation
-- Strict "open X and Y" command parsing
-- 8-second session timeout after wake word
-- Maximum safety with extensive process blacklisting
-
-### 🤖 **Jarvis Edition** (Enhanced)
-- Natural language understanding (like J.A.R.V.I.S. from Iron Man)
-- Conversational English comprehension
-- Context-aware responses ("open it again", "close it")
-- 30-second session timeout for extended conversations
-- More human-like TTS responses
-- Background indexing for faster startup
+<br />
 
 ---
 
-## ✨ Key Features
+## ✨ What Hermes Can Do
 
-| Capability | Description |
-| :--- | :--- |
-| **🎙️ Wake-Word Engine** | Continuous background listener calibrated for `"Hey Buddy"` with dynamic ambient noise auto-adjustment. |
-| **🔗 Multi-Intent Parser** | Chained command execution in a single breath (e.g., `"open X and open Y and close Z"`). |
-| **🔍 Scored Fuzzy Discovery** | Automatically indexes Windows Start Menu, Program Files, AppData, and Registry to match spoken names (e.g. `"anti gravity"` → `anti-gravity.exe`). |
-| **🛡️ Bulletproof Safety** | Kernel-level process blacklist preventing voice commands from terminating critical Windows services (`explorer.exe`, `csrss.exe`, `svchost.exe`). |
-| **🌐 Browser & Tab Routing** | Native dispatching to **Comet**, **Google Chrome**, and **Microsoft Edge** with keystroke tab controls (`new tab`, `close tab`, `switch tab`). |
-| **🔊 Non-blocking TTS** | Instant spoken audio feedback on every execution state using native Windows SAPI5. |
-| **🔒 100% Local & Private** | No audio recordings or telemetry are stored on disk or sent to external servers. |
+<br />
+
+<div align="center">
+
+| 🎯 Capability | 💬 Example |
+|:---|:---|
+| **Launch any app** | *"Open Discord"*, *"Start VS Code"*, *"Launch Spotify"* |
+| **Close any app** | *"Close Chrome"*, *"Quit Notepad"* |
+| **Browser tabs** | *"Open a new tab and search YouTube"*, *"Close this tab"* |
+| **Web search** | *"Search for Python tutorials"*, *"Google the weather"* |
+| **Navigate anywhere** | *"Go to github.com"*, *"Open YouTube"*, *"Visit Reddit"* |
+| **Browser controls** | *"Go back"*, *"Refresh the page"*, *"Open incognito"* |
+| **Open folders** | *"Open my Downloads"*, *"Show my Desktop folder"* |
+| **Search files** | *"Find a file called resume"*, *"Search for budget"* |
+| **Chain commands** | *"Open Chrome and search YouTube"* all in one breath |
+| **Context awareness** | *"Close it"* → closes what you just opened |
+
+</div>
+
+<br />
+
+---
+
+## 🔐 Built With Safety First
+
+Hermes is **permission-locked by design**. It only has access to exactly three things:
+
+```
+✅  Open and close applications
+✅  Control your browser  (tabs, search, navigate)
+✅  Open common folders   (Desktop, Downloads, Documents, Pictures, Music, Videos)
+```
+
+That's the full list. There's no keyboard snooping, no system command execution, no file modification, no screenshots, no shutdown commands, no volume changes — **nothing else**. Any request outside this boundary is politely declined.
+
+<br />
+
+> [!NOTE]
+> The unused modules (`system_control`, `window_control`, `keyboard_control`) aren't just disabled — they were **deleted from disk** entirely so they can't be accidentally re-enabled.
+
+<br />
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- **OS**: Windows 10 or 11 (64-bit)
+- **Python**: 3.10 or higher
+- **Microphone**: Any working mic, configured in Windows Sound settings
+- **Internet**: Required for speech recognition (Google STT) — everything else runs offline
+
+<br />
+
+### 1 · Clone the repo
+
+```bash
+git clone https://github.com/swarajshelke12/HermesVoiceAgent.git
+cd HermesVoiceAgent
+```
+
+### 2 · Create a virtual environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3 · Install dependencies
+
+```bash
+pip install SpeechRecognition pyttsx3 pyaudio pyautogui pyperclip
+```
+
+### 4 · Run it
+
+```bash
+# Option A — Python directly
+python hermes_assistant.py
+
+# Option B — Double-click the launcher
+run_hermes.bat
+```
+
+<br />
+
+Once it starts, you'll see the activation banner and hear a startup chime. Then:
+
+```
+Say → "Hey Buddy"   (or "Hey Hermes" or "Hey Jarvis")
+Wait → "Yes?" / "I'm here!" / "What's up?"
+Say → your command
+```
+
+<br />
+
+---
+
+## 🗣️ Voice Command Reference
+
+> Wake Hermes first: **"Hey Buddy"**, **"Hey Hermes"**, or **"Hey Jarvis"**
+
+<br />
+
+### 📱 Apps
+
+```
+"Open Chrome"
+"Launch Spotify"
+"Start VS Code"
+"Close Discord"
+"Quit Notepad"
+"Close it"              ← closes whatever you last opened
+"Open it again"         ← reopens whatever you last opened
+```
+
+<br />
+
+### 🌐 Browser
+
+```
+"Open a new tab"
+"Open a new tab and search YouTube"
+"Search for Python tutorials"
+"Go to github.com"
+"Close this tab"
+"Next tab"
+"Previous tab"
+"Go back"
+"Go forward"
+"Refresh the page"
+"Open incognito"
+"Bookmark this page"
+"Zoom in" / "Zoom out"
+"Scroll down" / "Scroll up"
+"Open browser history"
+```
+
+<br />
+
+### 📁 Folders
+
+```
+"Open my Downloads"
+"Open my Documents"
+"Open the Desktop folder"
+"Show my Pictures"
+"Open my Music"
+"Open Videos"
+```
+
+<br />
+
+### 🔍 File Search
+
+```
+"Search for resume"
+"Find a file called budget"
+"Look for presentation"
+"Do I have a file called notes?"
+```
+
+<br />
+
+### 💬 Conversation
+
+```
+"Hello"  /  "Hey"  /  "Hi"        ← Hermes greets you back
+"Goodbye"  /  "Bye"  /  "Stop"    ← ends the session
+```
+
+<br />
+
+### 🔗 Chained Commands *(the cool part)*
+
+```
+"Open Chrome and search YouTube"
+"Close Spotify and open VLC"
+"Open a new tab and go to reddit.com"
+"Can you please open Discord"          ← polite words stripped automatically
+"I want to launch Spotify"             ← natural phrasing understood
+```
+
+<br />
+
+---
+
+## ⚙️ How It Works
+
+<br />
+
+```
+You speak
+    ↓
+Wake word detection  ("Hey Buddy" / "Hey Hermes" / "Hey Jarvis")
+    ↓
+Google Speech-to-Text (en-IN → en fallback)
+    ↓
+NLP Engine  (regex intent matching, compound command splitting, context resolution)
+    ↓
+Dispatcher  (routes to the right module)
+    ↓
+         ┌──────────────┬─────────────────┬─────────────────┐
+         ▼              ▼                 ▼                 ▼
+    App Control    Browser Control   File Control     Denied ✗
+    (open/close)   (tabs, search,    (folders only,
+                    navigate)         read-only)
+         └──────────────┴─────────────────┘
+                        ↓
+              humanize()  ← converts technical output to natural speech
+                        ↓
+              Hermes speaks back to you
+```
+
+<br />
+
+The NLP engine uses **priority-ordered regex intent matching** — not an LLM, not a cloud API. Everything runs on your machine. The parser handles:
+
+- **Polite words**: *"could you please"*, *"I want to"*, *"can you"* → stripped before parsing
+- **Compound commands**: *"open Chrome and search YouTube"* → split into two separate commands
+- **Contextual references**: *"close it"* → resolved to whatever you last opened
+- **Fuzzy app matching**: registry + Start Menu shortcuts + filesystem scan + PATH fallback
+
+<br />
 
 ---
 
@@ -62,205 +276,115 @@ Hermes comes in two editions to suit different preferences:
 
 ```mermaid
 flowchart TD
-    A[Microphone Stream] --> B{Wake Word Engine}
-    B -- "Ambient Audio" --> A
-    B -- "Detected 'Hey Buddy'" --> C[Acoustic Feedback: 'Yes']
-    
-    C --> D[Active Listening Window]
-    D --> E[Multi-Intent Tokenizer & Parser]
-    
-    E --> F[Command Dispatcher]
-    
-    F -->|App Launch| G[Fuzzy App Indexer]
-    F -->|Browser / URL| H[Browser Route Dispatcher]
-    F -->|Close / Terminate| I[Safety Blacklist Filter]
-    
-    G --> J[Windows Subprocess API]
-    H --> J
-    I -->|Safe| J
-    I -->|Critical Process Blocked| K[Safety Alert Speech]
-    
-    J --> L[TTS Audio Confirmation Engine]
-    K --> L
-    L --> M[Return to Sleep Mode]
+    A[🎙️ Microphone] --> B{Wake Word\nDetected?}
+    B -- No --> A
+    B -- Yes --> C[🔊 Hermes responds\n'Yes?' / 'I'm here!']
+    C --> D[Active Listening\n60s session window]
+    D --> E[🧠 NLP Engine\nIntent Matching + Compound Split]
+
+    E --> F{Intent Type}
+
+    F -->|open_app / close_app| G[App Control\nRegistry + Start Menu + Fuzzy Index]
+    F -->|browser_*| H[Browser Control\nKeyboard Shortcuts]
+    F -->|file_open| I[File Control\nWhitelisted Folders Only]
+    F -->|file_search| I
+    F -->|unknown| J[🚫 Permission Denied\nPolite refusal]
+
+    G --> K[humanize\nNatural language response]
+    H --> K
+    I --> K
+    J --> K
+
+    K --> L[🔊 pyttsx3 TTS\nHermes speaks back]
+    L --> D
 ```
+
+<br />
 
 ---
 
-## 🚀 Quick Start
-
-### Prerequisites
-- **OS**: Windows 10 / 11 (64-bit)
-- **Python**: 3.10 or higher
-- **Microphone & Speaker**: Properly configured in Windows sound settings
-
-### Installation
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/swarajshelke12/HermesVoiceAgent.git
-   cd HermesVoiceAgent
-   ```
-
-2. **Set Up a Virtual Environment**
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate
-   ```
-
-3. **Install Dependencies**
-   ```bash
-   pip install SpeechRecognition pyttsx3 pyaudio
-   ```
-
-4. **Launch Hermes**
-
-   **Classic Edition:**
-   ```bash
-   # Option A: Run directly via Python
-   python hermes_assistant.py
-   
-   # Option B: Double-click the launcher script
-   run_hermes.bat
-   ```
-
-   **Jarvis Edition:**
-   ```bash
-   # Option A: Run directly via Python
-   python hermes_jarvis.py
-   
-   # Option B: Double-click the launcher script
-   run_hermes_jarvis.bat
-   ```
-
-Once initialized, you will see `Hermes ready` and hear audio confirmation. Say **"Hey Buddy"** to begin.
-
----
-
-## 🗣️ Command Catalog
-
-Always wake Hermes with **"Hey Buddy"**, followed by your command(s):
-
-### 1. Launching Applications
-Hermes utilizes scored fuzzy search to locate desktop applications, Microsoft Store packages, and local binaries.
-```text
-"Hey Buddy, open Spotify"
-"Hey Buddy, open File Explorer"
-"Hey Buddy, open Visual Studio Code"
-"Hey Buddy, open Anti Gravity"
-"Hey Buddy, open Notepad and open Spotify"
-```
-
-### 2. Terminating Applications
-Hermes safely kills user-space processes while strictly rejecting system-critical tasks.
-```text
-"Hey Buddy, close Spotify"
-"Hey Buddy, close Notepad and close Chrome"
-"Hey Buddy, kill Discord"
-```
-
-### 3. Web & Browser Navigation
-Supports direct website shortcuts and browser targeting (`Comet`, `Chrome`, `Edge`).
-```text
-"Hey Buddy, open GitHub"
-"Hey Buddy, open YouTube in Chrome"
-"Hey Buddy, open Google on Comet"
-"Hey Buddy, open Gmail and open LinkedIn"
-```
-
-### 4. Comet Browser Tab Management
-Executes native keyboard navigation commands within the active browser window:
-```text
-"Hey Buddy, new tab"        -> Opens new browser tab
-"Hey Buddy, close tab"      -> Closes current active tab
-"Hey Buddy, switch tab"     -> Cycles to next open tab
-"Hey Buddy, previous tab"   -> Returns to previous tab
-```
-
-### 5. System Folders & Directories
-```text
-"Hey Buddy, open Downloads"
-"Hey Buddy, open Desktop"
-"Hey Buddy, open Documents"
-```
-
-### 6. Natural Language Commands (Jarvis Edition Only)
-```text
-"Hey Buddy, can you open Spotify please?"
-"Hey Buddy, I need to check my email"
-"Hey Buddy, close Chrome and open Firefox"
-"Hey Buddy, launch Photoshop and start a new design"
-"Hey Buddy, play some music on Spotify"
-"Hey Buddy, open it again"  # Reopens last opened item
-"Hey Buddy, close it"       # Closes last opened item
-```
-
-### 7. Session Termination
-```text
-"Hey Buddy, goodbye"
-"Hey Buddy, stop"
-"Hey Buddy, exit"
-```
-
----
-
-## 🛡️ System Safety Layer
-
-To prevent system lockups, blue screens, or desktop disappearance, Hermes enforces an un-bypassable **Critical Process Blacklist**:
-
-```python
-CRITICAL_PROCESS_BLACKLIST = {
-    "explorer", "csrss", "svchost", "system", 
-    "smss", "wininit", "services", "lsass", "fontdrvhost"
-}
-```
-
-- **Protected System Shell**: Commands like `"close explorer"` or `"kill system"` are immediately intercepted and safely blocked.
-- **Graceful Fallbacks**: Uses scoped window title matching before resorting to force-kill parameters.
-
----
-
-## ⚙️ Configuration
-
-Custom system aliases, energy calibration levels, and browser preferences can be tuned in `hermes_assistant_config.json` or at the top of each Python file:
-
-```json
-{
-  "wake_word": "hey buddy",
-  "command_timeout_seconds": 8.0,
-  "default_browser": "comet",
-  "speech_energy_threshold": 80,
-  "voice_feedback_enabled": true
-}
-```
-
----
-
-## 📁 Repository Structure
+## 📦 Project Structure
 
 ```
 HermesVoiceAssistant/
-├── hermes_assistant.py          # Core engine (Classic Edition)
-├── hermes_jarvis.py             # Enhanced natural language edition (Jarvis)
-├── hermes_assistant_config.json # Runtime preferences and user mappings
-├── run_hermes.bat               # Windows double-click launcher (Classic)
-├── run_hermes_jarvis.bat        # Windows double-click launcher (Jarvis)
-├── BUILD.md                     # Detailed build logs and technical architecture
-├── DEV_LOG.md                   # Engineering changelog and release history
-└── README.md                    # Project documentation
+│
+├── hermes_assistant.py           ← Main entry point & orchestrator
+│
+├── modules/
+│   ├── nlp_engine.py             ← Intent parser (regex-based, no LLM)
+│   ├── app_control.py            ← Open/close apps, fuzzy index builder
+│   ├── browser_control.py        ← Tab management, search, navigation
+│   └── file_control.py           ← Whitelisted folder access + file search
+│
+├── hermes_assistant_config.json  ← Runtime configuration
+├── run_hermes.bat                ← One-click launcher
+├── BUILD.md                      ← Full build history & technical deep-dive
+└── DEV_LOG.md                    ← Engineering changelog
 ```
+
+<br />
 
 ---
 
-## 👨‍💻 Author
+## 🛠️ Dependencies
 
-**Swaraj Shelke**  
-*AI Systems & Automation Engineer*  
-- GitHub: [@swarajshelke12](https://github.com/swarajshelke12)  
-- Portfolio: [jexor.studio](https://github.com/swarajshelke12)
+| Package | Purpose |
+|:---|:---|
+| `SpeechRecognition` | Microphone capture + Google STT |
+| `pyttsx3` | Offline text-to-speech (SAPI5) |
+| `pyaudio` | Audio stream input |
+| `pyautogui` | Keyboard shortcuts for browser control |
+| `pyperclip` | Clipboard-based text pasting (handles Unicode) |
+| `psutil` | Process detection and management |
+| `pywin32` | Windows registry access for app indexing |
+
+<br />
+
+---
+
+## 🎨 Why "Hermes"?
+
+In Greek mythology, **Hermes** is the messenger god — the one who carries words between worlds instantly, without being seen. That's exactly what this assistant does: it listens, understands, acts, and speaks back — all in a few hundred milliseconds, running quietly in the background.
+
+No cloud dependency for the core engine. No data sent anywhere. Just you, your voice, and your laptop doing what you say.
+
+<br />
+
+---
+
+## 👤 Author
+
+<div align="center">
+
+**Swaraj Shelke**
+*Builder of things that should exist*
+
+[![GitHub](https://img.shields.io/badge/GitHub-swarajshelke12-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/swarajshelke12)
+
+<br />
+
+*Built over ~3 days of iterative voice testing, debugging, and a lot of "Hey Buddy, open Chrome".*
+
+</div>
+
+<br />
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+MIT — do whatever you want, just don't blame me if Hermes develops opinions.
+
+---
+
+<div align="center">
+
+<br />
+
+*If it made your laptop feel a little more like a spaceship, it worked.*
+
+<br />
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=6C63FF&height=100&section=footer)
+
+</div>
