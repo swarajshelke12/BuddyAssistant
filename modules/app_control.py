@@ -1,7 +1,6 @@
 """
-Hermes Voice Assistant — App Control
+Buddy Agent — App Control
 Handles: open/close/switch applications, build app index, fuzzy match.
-Extracted and enhanced from the original hermes_assistant.py.
 """
 
 import os

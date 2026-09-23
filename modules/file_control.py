@@ -1,6 +1,6 @@
 """
-Hermes Voice Assistant — Folder Access (Restricted)
-ONLY opens well-known user folders. No file access, no creation, no search.
+Buddy Agent — Folder Access (Restricted)
+ONLY opens well-known user folders. Safe, restricted file search by name.
 """
 
 import os

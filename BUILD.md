@@ -1,10 +1,11 @@
-# Hermes Voice Assistant — Build Plan & Project History
+# Buddy Agent — Build Plan & Project History
 
-> **Project**: Hermes Voice Assistant  
+> **Project**: Buddy Agent (Voice-Controlled Laptop Operator)  
+> **Environment Note**: Originally built and bootstrapped inside the Hermes agent environment  
 > **Type**: Desktop Voice Controller (Python)  
 > **Platform**: Windows 11  
-> **Build Duration**: ~3 days (iterative prompting with Hermes agent)  
-> **Current State**: Fully functional — v1.0.0  
+> **Build Duration**: ~3 days (iterative development)  
+> **Current State**: Fully functional — v1.2.0  
 > **Author**: Swaraj Shelke  
 > **Created**: 2026-09-14
 

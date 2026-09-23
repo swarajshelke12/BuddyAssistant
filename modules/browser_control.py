@@ -1,5 +1,5 @@
 """
-Hermes Voice Assistant — Browser Control
+Buddy Agent — Browser Control
 Handles: new tab, close tab, switch tabs, search, navigate, back/forward,
          refresh, incognito, zoom, find on page, bookmarks.
 All operations use keyboard shortcuts (browser-agnostic: Chrome/Edge/Firefox).

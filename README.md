@@ -2,7 +2,7 @@
 
 <!-- Animated title using SVG -->
 <a href="https://github.com/swarajshelke12/HermesVoiceAgent">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=Hey+Buddy%2C+open+Chrome.;Hey+Buddy%2C+search+YouTube.;Hey+Buddy%2C+close+Spotify.;Meet+Hermes." alt="Typing animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=Hey+Buddy%2C+open+Chrome.;Hey+Buddy%2C+search+YouTube.;Hey+Buddy%2C+close+Spotify.;Meet+Buddy+Agent." alt="Typing animation" />
 </a>
 
 <br />
@@ -14,13 +14,14 @@
 <!-- Badges -->
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![Wake Word](https://img.shields.io/badge/Wake%20Word-Hey%20Buddy-8B5CF6?style=for-the-badge&logo=soundcharts&logoColor=white)
 ![Build](https://img.shields.io/badge/Build-Passing-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 ![Privacy](https://img.shields.io/badge/100%25-Local%20%26%20Private-6C63FF?style=for-the-badge&logo=shield&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge)
 
 <br />
 
-**[Quick Start](#-quick-start)** · **[What It Can Do](#-what-hermes-can-do)** · **[How It Works](#-how-it-works)** · **[Voice Commands](#-voice-command-reference)** · **[Architecture](#-architecture)**
+**[Quick Start](#-quick-start)** · **[What It Can Do](#-what-buddy-can-do)** · **[How It Works](#-how-it-works)** · **[Voice Commands](#-voice-command-reference)** · **[Architecture](#-architecture)**
 
 </div>
 
@@ -28,13 +29,13 @@
 
 <br />
 
-## ⚡ What Is Hermes?
+## ⚡ What Is Buddy Agent?
 
 > *"Hey Buddy, open Chrome and search YouTube."*
 
 That's it. That's the whole idea.
 
-**Hermes** is a voice-activated laptop operator for Windows. Not just a smart speaker shortcut, not just a macro runner — a real agent that **understands natural English**, figures out what you mean, and **actually does it**. Open apps. Control your browser. Search your files. Switch tabs. All hands-free, all offline, all private.
+**Buddy Agent** is a voice-activated laptop operator for Windows. Not just a smart speaker shortcut, not just a macro runner — a real agent that **understands natural English**, figures out what you mean, and **actually does it**. Open apps. Control your browser. Search your files. Switch tabs. All hands-free, all offline, all private.
 
 Think **J.A.R.V.I.S.** — minus the Iron Man suit, plus your actual laptop.
 
@@ -42,7 +43,7 @@ Think **J.A.R.V.I.S.** — minus the Iron Man suit, plus your actual laptop.
 
 ---
 
-## ✨ What Hermes Can Do
+## ✨ What Buddy Can Do
 
 <br />
 
@@ -69,7 +70,7 @@ Think **J.A.R.V.I.S.** — minus the Iron Man suit, plus your actual laptop.
 
 ## 🔐 Built With Safety First
 
-Hermes is **permission-locked by design**. It only has access to exactly three things:
+Buddy Agent is **permission-locked by design**. It only has access to exactly three domains:
 
 ```
 ✅  Open and close applications
@@ -77,7 +78,7 @@ Hermes is **permission-locked by design**. It only has access to exactly three t
 ✅  Open common folders   (Desktop, Downloads, Documents, Pictures, Music, Videos)
 ```
 
-That's the full list. There's no keyboard snooping, no system command execution, no file modification, no screenshots, no shutdown commands, no volume changes — **nothing else**. Any request outside this boundary is politely declined.
+That's the full list. There's no keyboard snooping, no system command execution, no arbitrary file modification, no screenshots, no shutdown commands, no volume changes — **nothing else**. Any request outside this boundary is politely declined.
 
 <br />
 
@@ -116,17 +117,17 @@ venv\Scripts\activate
 ### 3 · Install dependencies
 
 ```bash
-pip install SpeechRecognition pyttsx3 pyaudio pyautogui pyperclip
+pip install SpeechRecognition pyttsx3 pyaudio pyautogui pyperclip psutil pywin32
 ```
 
 ### 4 · Run it
 
 ```bash
 # Option A — Python directly
-python hermes_assistant.py
+python buddy_assistant.py
 
-# Option B — Double-click the launcher
-run_hermes.bat
+# Option B — Double-click the one-click launcher
+run_buddy.bat
 ```
 
 <br />
@@ -145,7 +146,7 @@ Say → your command
 
 ## 🗣️ Voice Command Reference
 
-> Wake Hermes first: **"Hey Buddy"**, **"Hey Hermes"**, or **"Hey Jarvis"**
+> Wake Buddy first: **"Hey Buddy"** *(alternates: "Hey Hermes", "Hey Jarvis")*
 
 <br />
 
@@ -212,7 +213,7 @@ Say → your command
 ### 💬 Conversation
 
 ```
-"Hello"  /  "Hey"  /  "Hi"        ← Hermes greets you back
+"Hello"  /  "Hey"  /  "Hi"        ← Buddy greets you back
 "Goodbye"  /  "Bye"  /  "Stop"    ← ends the session
 ```
 
@@ -256,12 +257,12 @@ Dispatcher  (routes to the right module)
                         ↓
               humanize()  ← converts technical output to natural speech
                         ↓
-              Hermes speaks back to you
+              Buddy speaks back to you
 ```
 
 <br />
 
-The NLP engine uses **priority-ordered regex intent matching** — not an LLM, not a cloud API. Everything runs on your machine. The parser handles:
+The NLP engine uses **priority-ordered regex intent matching** — not a heavy LLM, not a paid cloud API. Everything runs fast and reliably on your machine:
 
 - **Polite words**: *"could you please"*, *"I want to"*, *"can you"* → stripped before parsing
 - **Compound commands**: *"open Chrome and search YouTube"* → split into two separate commands
@@ -278,7 +279,7 @@ The NLP engine uses **priority-ordered regex intent matching** — not an LLM, n
 flowchart TD
     A[🎙️ Microphone] --> B{Wake Word\nDetected?}
     B -- No --> A
-    B -- Yes --> C[🔊 Hermes responds\n'Yes?' / 'I'm here!']
+    B -- Yes --> C[🔊 Buddy responds\n'Yes?' / 'I'm here!']
     C --> D[Active Listening\n60s session window]
     D --> E[🧠 NLP Engine\nIntent Matching + Compound Split]
 
@@ -295,7 +296,7 @@ flowchart TD
     I --> K
     J --> K
 
-    K --> L[🔊 pyttsx3 TTS\nHermes speaks back]
+    K --> L[🔊 pyttsx3 TTS\nBuddy speaks back]
     L --> D
 ```
 
@@ -306,9 +307,10 @@ flowchart TD
 ## 📦 Project Structure
 
 ```
-HermesVoiceAssistant/
+BuddyAgent/
 │
-├── hermes_assistant.py           ← Main entry point & orchestrator
+├── buddy_assistant.py            ← Primary entry point & runner
+├── hermes_assistant.py           ← Core orchestrator & backward-compat module
 │
 ├── modules/
 │   ├── nlp_engine.py             ← Intent parser (regex-based, no LLM)
@@ -316,11 +318,16 @@ HermesVoiceAssistant/
 │   ├── browser_control.py        ← Tab management, search, navigation
 │   └── file_control.py           ← Whitelisted folder access + file search
 │
-├── hermes_assistant_config.json  ← Runtime configuration
-├── run_hermes.bat                ← One-click launcher
+├── run_buddy.bat                 ← One-click Windows launcher
+├── run_hermes.bat                ← Legacy launcher
+├── buddy_assistant_config.json   ← Configuration
 ├── BUILD.md                      ← Full build history & technical deep-dive
 └── DEV_LOG.md                    ← Engineering changelog
 ```
+
+> [!NOTE]
+> **Why do some files contain `hermes` in the name?**  
+> The early foundation and automation experiments for this project were bootstrapped inside the Hermes agent environment. The project's true name and personality is **Buddy Agent** (wake word: *"Hey Buddy"*). Legacy filenames are preserved as aliases so existing shortcuts and scripts never break.
 
 <br />
 
@@ -342,11 +349,15 @@ HermesVoiceAssistant/
 
 ---
 
-## 🎨 Why "Hermes"?
+## 🎨 Why "Buddy Agent"?
 
-In Greek mythology, **Hermes** is the messenger god — the one who carries words between worlds instantly, without being seen. That's exactly what this assistant does: it listens, understands, acts, and speaks back — all in a few hundred milliseconds, running quietly in the background.
+In everyday life, nobody wants a cold, robotic assistant that forces you to memorize strict technical syntax or risks running arbitrary scripts on your machine. You want a **Buddy** — a reliable companion sitting right next to you on your desktop.
 
-No cloud dependency for the core engine. No data sent anywhere. Just you, your voice, and your laptop doing what you say.
+When you're busy writing code, editing video, cooking with messy hands, or relaxing on your chair, you don't want to reach for the mouse to close twenty tabs or search YouTube. You just say **"Hey Buddy"**, speak what you need, and it happens.
+
+- **Fast & Responsive**: Operates directly at the OS and browser levels in milliseconds.
+- **Privacy & Safety First**: Locked down so it can never touch your private files, delete data, or execute unsafe commands.
+- **Natural Interaction**: Understands conversational English and answers back naturally.
 
 <br />
 
@@ -356,14 +367,14 @@ No cloud dependency for the core engine. No data sent anywhere. Just you, your v
 
 <div align="center">
 
-**Swaraj Shelke**
+**Swaraj Shelke**  
 *Builder of things that should exist*
 
 [![GitHub](https://img.shields.io/badge/GitHub-swarajshelke12-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/swarajshelke12)
 
 <br />
 
-*Built over ~3 days of iterative voice testing, debugging, and a lot of "Hey Buddy, open Chrome".*
+*Built with iterative voice testing, debugging, and a lot of "Hey Buddy, open Chrome".*
 
 </div>
 
@@ -373,7 +384,7 @@ No cloud dependency for the core engine. No data sent anywhere. Just you, your v
 
 ## 📄 License
 
-MIT — do whatever you want, just don't blame me if Hermes develops opinions.
+MIT — do whatever you want, just don't blame me if Buddy develops opinions.
 
 ---
 

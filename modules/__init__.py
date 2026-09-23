@@ -1,1 +1,1 @@
-# Hermes Voice Assistant — Modules Package
+# Buddy Agent — Modules Package

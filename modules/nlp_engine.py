@@ -1,5 +1,5 @@
 """
-Hermes Voice Assistant — NLP Engine (Secured)
+Buddy Agent — NLP Engine (Secured)
 Parses conversational English into structured commands.
 RESTRICTED to: open/close apps, browser control, open common folders.
 No system control, no keyboard, no window management, no media, no file access.
@@ -23,9 +23,9 @@ class Command:
 INTENT_PATTERNS = [
     # ── EXIT ─────────────────────────────────────────────────
     ("exit", [
-        r"^(goodbye|bye|see you|that's all|stop listening|exit|quit|go to sleep|shut down hermes|stop hermes)$",
-    ], ["goodbye", "bye", "see you later", "that's all", "stop", "exit hermes",
-        "quit hermes", "go to sleep"]),
+        r"^(goodbye|bye|see you|that's all|stop listening|exit|quit|go to sleep|shut down buddy|stop buddy|exit buddy|quit buddy|shut down hermes|stop hermes)$",
+    ], ["goodbye", "bye", "see you later", "that's all", "stop", "exit buddy",
+        "quit buddy", "stop buddy", "exit hermes", "quit hermes", "go to sleep"]),
 
     # ── GREETING ─────────────────────────────────────────────
     ("greeting", [
@@ -157,7 +157,7 @@ def _clean_text(text):
         "i want to", "i need to", "i'd like to", "i would like to",
         "let's", "lets", "go ahead and", "just", "maybe", "possibly",
         "for me", "right now", "immediately", "quickly", "now",
-        "hey buddy", "hey hermes", "hey jarvis",
+        "hey buddy", "buddy", "hey hermes", "hey jarvis",
     ]
     for filler in fillers:
         text = text.replace(filler, " ")

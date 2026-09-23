@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hermes Voice Assistant — Secured Laptop Agent
+Buddy Agent — Voice-Controlled Laptop Operator
 PERMISSIONS (strict):
   - Open / close applications
   - Browser control (tabs, search, navigate, bookmarks)
@@ -23,7 +23,7 @@ WAKE_WORDS = ["hey buddy", "hey hermes", "hey jarvis"]
 SESSION_TIMEOUT = 60.0  # seconds before going back to standby
 
 # ── Conversational Personality ────────────────────────────
-# Hermes speaks like a real person — varied, warm, natural.
+# Buddy speaks like a real person — varied, warm, natural.
 
 RESPONSES = {
     "greeting": [
@@ -197,7 +197,8 @@ def humanize(intent, target, ok, raw_msg):
     return random.choice(["Done.", "All set.", "You got it."])
 
 
-class Hermes:
+class BuddyAgent:
+    """Buddy Agent — Voice-Controlled Laptop Operator."""
     def __init__(self):
         # Speech
         self.rec = sr.Recognizer()
@@ -230,7 +231,7 @@ class Hermes:
 
     def speak(self, text):
         """Speak text aloud."""
-        print(f"[HERMES] {text}")
+        print(f"[BUDDY] {text}")
         try:
             self.tts.say(text)
             self.tts.runAndWait()
@@ -366,23 +367,24 @@ class Hermes:
         print("""
         +---------------------------------------------------------------+
         |                                                               |
-        |              H E R M E S   A C T I V A T E D                 |
-        |              Secured Laptop Control Agent                     |
+        |              B U D D Y   A G E N T   O N L I N E             |
+        |              Voice-Controlled Laptop Operator                 |
         |                                                               |
-        |  Say "Hey Buddy", "Hey Hermes", or "Hey Jarvis"              |
-        |  Then speak naturally.                                        |
+        |  Say "Hey Buddy" to wake me up.                              |
+        |  Then just speak naturally — I'll handle the rest.           |
         |                                                               |
         |  I can:                                                       |
         |   - Open and close any application                            |
         |   - Control your browser (tabs, search, navigate)             |
         |   - Open common folders (Desktop, Downloads, etc.)            |
+        |   - Search for files by name                                  |
         |                                                               |
         |  Examples:                                                    |
-        |   "Open Chrome"                                               |
-        |   "Open a new tab and search YouTube"                         |
-        |   "Close Spotify"                                             |
-        |   "Open my downloads folder"                                  |
-        |   "Go to github.com"                                          |
+        |   "Hey Buddy, open Chrome"                                    |
+        |   "Hey Buddy, open a new tab and search YouTube"              |
+        |   "Hey Buddy, close Spotify"                                  |
+        |   "Hey Buddy, open my downloads folder"                       |
+        |   "Hey Buddy, go to github.com"                               |
         |                                                               |
         +---------------------------------------------------------------+
         """)
@@ -449,12 +451,16 @@ class Hermes:
             self.speak(random.choice(RESPONSES["multi_done"]))
 
 
+# Backward compatibility alias
+Hermes = BuddyAgent
+
+
 # ── Test Mode ─────────────────────────────────────────────────
 
 def run_test_mode():
     """Run NLP parser tests without microphone."""
     print("\n" + "=" * 60)
-    print("  HERMES - NLP Parser Test Mode (Secured)")
+    print("  BUDDY AGENT - NLP Parser Test Mode (Secured)")
     print("=" * 60 + "\n")
     success = nlp_engine.test_parser()
     print("\n" + "=" * 60)
@@ -470,4 +476,4 @@ if __name__ == "__main__":
     if "--test" in sys.argv:
         run_test_mode()
     else:
-        Hermes().run()
+        BuddyAgent().run()

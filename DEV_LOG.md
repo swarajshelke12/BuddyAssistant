@@ -528,3 +528,4 @@ Continuous build notes, architectural updates, and iterative improvements.
 - `2026-09-23 20:31:02`: docs: add troubleshooting steps for microphone access permissions
 - `2026-09-23 20:11:40`: refactor(ui): streamline terminal status feedback and color logging
 - `2026-09-23 18:03:39`: fix(safety): enforce critical system process protection blacklist
+- `2026-09-23 22:56:00`: refactor(brand): rebrand assistant to Buddy Agent, introduce buddy_assistant.py entry point and run_buddy.bat launcher, preserve backward-compatible aliases
