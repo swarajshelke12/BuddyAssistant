@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated title using SVG -->
-<a href="https://github.com/swarajshelke12/HermesVoiceAgent">
+<a href="https://github.com/swarajshelke12/BuddyAssistant-">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=Hey+Buddy%2C+open+Chrome.;Hey+Buddy%2C+search+YouTube.;Hey+Buddy%2C+close+Spotify.;Meet+Buddy+Agent." alt="Typing animation" />
 </a>
 
@@ -103,8 +103,8 @@ That's the full list. There's no keyboard snooping, no system command execution,
 ### 1 · Clone the repo
 
 ```bash
-git clone https://github.com/swarajshelke12/HermesVoiceAgent.git
-cd HermesVoiceAgent
+git clone https://github.com/swarajshelke12/BuddyAssistant-.git
+cd BuddyAssistant-
 ```
 
 ### 2 · Create a virtual environment
