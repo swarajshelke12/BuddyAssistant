@@ -1,7 +1,7 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "name": "Buddy Agent — Voice-Controlled Laptop Operator",
-  "description": "Voice-activated assistant for opening/closing apps, folders, and browser control. Wake word: 'Hey Buddy'. Strict permission boundary.",
+  "description": "Voice-activated assistant for opening/closing apps, folders, and browser control. Wake word: 'Hey Buddy'. Strict permission boundary. 8-second session window after wake word.",
   "author": "Swaraj Shelke",
   "entry_point": "buddy_assistant.py",
   "requirements": [

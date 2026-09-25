@@ -206,6 +206,18 @@ class BuddyAgent:
         self.tts = pyttsx3.init()
         self._setup_tts()
 
+        # Modules
+        self.app_ctrl = AppController()
+
+        # State
+        self.running = True
+        self.in_session = False
+        self.session_start = 0
+        self.context = {
+            "last_opened": [],
+            "last_closed": [],
+        }
+
     def _detect_microphone(self):
         """Auto-detect the best available microphone."""
         try:
@@ -228,20 +240,6 @@ class BuddyAgent:
         except Exception as e:
             print(f"[AUDIO] Mic auto-detect failed: {e}, using default")
         return sr.Microphone()  # default fallback
-        self.tts = pyttsx3.init()
-        self._setup_tts()
-
-        # Modules
-        self.app_ctrl = AppController()
-
-        # State
-        self.running = True
-        self.in_session = False
-        self.session_start = 0
-        self.context = {
-            "last_opened": [],
-            "last_closed": [],
-        }
 
     def _setup_tts(self):
         """Configure text-to-speech."""

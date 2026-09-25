@@ -147,10 +147,28 @@ INTENT_PATTERNS = [
 
 
 def _clean_text(text):
-    """Remove polite words and filler."""
+    """Remove polite words and filler, and normalize common phrases."""
     if not text:
         return ""
     text = text.lower().strip()
+
+    # First, normalize common mis-speakings to their intended meanings
+    # Use word boundaries to avoid partial replacements
+    import re
+    normalizations = [
+        (r'\bfile folder\b', 'file explorer'),  # User says "file folder" but means File Explorer
+        (r'\bopen file\b(?!\s+explorer)', 'open file explorer'),  # Common variant but not if already "open file explorer"
+        (r'\bopen files\b', 'open file explorer'),
+        (r'\bopen my files\b', 'open file explorer'),
+        (r'\bopen documents folder\b', 'open documents'),  # Normalize
+        (r'\bopen downloads folder\b', 'open downloads'),
+        (r'\bopen pictures folder\b', 'open pictures'),
+        (r'\bopen music folder\b', 'open music'),
+        (r'\bopen videos folder\b', 'open videos'),
+    ]
+    
+    for pattern, replacement in normalizations:
+        text = re.sub(pattern, replacement, text)
 
     fillers = [
         "please", "could you", "can you", "would you", "will you",
@@ -169,28 +187,48 @@ def _clean_text(text):
 def _split_compound(text):
     """Split compound commands on conjunctions.
     'Open Chrome and search YouTube' -> ['open chrome', 'search youtube']
+    Also handles multiple conjunctions and 'also' properly.
     """
-    parts = re.split(
-        r'\s+(?:and\s+then|and\s+also|and\s+after\s+that|then|after\s+that|also)\s+',
-        text
-    )
-    if len(parts) == 1:
-        action_verbs = (
-            "open", "close", "launch", "start", "search",
-            "go", "navigate", "quit", "exit",
-        )
-        and_parts = re.split(r'\s+and\s+', text)
-        if len(and_parts) > 1:
-            valid_parts = [and_parts[0]]
-            for part in and_parts[1:]:
-                part_stripped = part.strip()
-                if any(part_stripped.startswith(v) for v in action_verbs):
-                    valid_parts.append(part_stripped)
+    # Start with the whole text as one part
+    parts = [text]
+    
+    # Define the separators in order of priority
+    separators = [
+        r'\s+and\s+then\s+',      # "and then"
+        r'\s+and\s+also\s+',      # "and also" 
+        r'\s+then\s+',            # "then"
+        r'\s+after\s+that\s+',    # "after that"
+        r'\s+also\s+',            # "also"
+        r'\s+and\s+',             # plain "and" (last, as it's most common)
+    ]
+    
+    # Apply each separator recursively
+    final_parts = []
+    for part in parts:
+        # Try each separator on this part
+        split_parts = [part]  # Start with the part itself
+        for sep_pattern in separators:
+            new_split_parts = []
+            for p in split_parts:
+                # Split on this separator
+                sub_parts = re.split(sep_pattern, p, flags=re.IGNORECASE)
+                if len(sub_parts) > 1:
+                    # Actually split, add all non-empty parts
+                    for sub in sub_parts:
+                        if sub.strip():
+                            new_split_parts.append(sub)
                 else:
-                    valid_parts[-1] += " and " + part_stripped
-            parts = valid_parts
-
-    return [p.strip() for p in parts if p.strip()]
+                    # No split on this pattern, keep the part
+                    new_split_parts.append(p)
+            split_parts = new_split_parts
+        
+        # Add all non-empty parts from this iteration
+        for p in split_parts:
+            if p.strip():
+                final_parts.append(p.strip())
+    
+    # Final cleanup
+    return [p.strip() for p in final_parts if p.strip()]
 
 
 def _match_intent(text, context=None):
