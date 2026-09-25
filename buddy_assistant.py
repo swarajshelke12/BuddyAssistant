@@ -20,7 +20,7 @@ from modules import file_control
 
 # ── Configuration ────────────────────────────────────────
 WAKE_WORDS = ["hey buddy", "hey hermes", "hey jarvis"]
-SESSION_TIMEOUT = 60.0  # seconds before going back to standby
+SESSION_TIMEOUT = 8.0   # seconds before going back to standby
 
 # ── Conversational Personality ────────────────────────────
 # Buddy speaks like a real person — varied, warm, natural.
@@ -202,7 +202,32 @@ class BuddyAgent:
     def __init__(self):
         # Speech
         self.rec = sr.Recognizer()
-        self.mic = sr.Microphone(device_index=17)
+        self.mic = self._detect_microphone()
+        self.tts = pyttsx3.init()
+        self._setup_tts()
+
+    def _detect_microphone(self):
+        """Auto-detect the best available microphone."""
+        try:
+            mics = sr.Microphone.list_microphone_names()
+            if not mics:
+                return sr.Microphone()  # fallback to default
+            # Prefer a dedicated microphone over virtual/duplicate devices
+            for i, name in enumerate(mics):
+                name_lower = name.lower()
+                # Skip output devices and duplicates
+                if any(skip in name_lower for skip in ['output', 'speakers', 'pc speaker', 'headset']):
+                    continue
+                # Prefer physical mics
+                if 'mic' in name_lower or 'input' in name_lower:
+                    print(f"[AUDIO] Using microphone device {i}: {name}")
+                    return sr.Microphone(device_index=i)
+            # Fallback to first mic that looks reasonable
+            if len(mics) > 0:
+                return sr.Microphone(device_index=0)
+        except Exception as e:
+            print(f"[AUDIO] Mic auto-detect failed: {e}, using default")
+        return sr.Microphone()  # default fallback
         self.tts = pyttsx3.init()
         self._setup_tts()
 
