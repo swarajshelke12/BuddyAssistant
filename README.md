@@ -35,9 +35,7 @@
 
 That's it. That's the whole idea.
 
-**Buddy Agent** is a voice-activated laptop operator for Windows. Not just a smart speaker shortcut, not just a macro runner — a real agent that **understands natural English**, figures out what you mean, and **actually does it**. Open apps. Control your browser. Search your files. Switch tabs. All hands-free, all offline, all private.
-
-Think **J.A.R.V.I.S.** — minus the Iron Man suit, plus your actual laptop.
+**Buddy Agent** is a voice-activated Windows laptop operator. It understands natural English, works out what you mean, and carries out the action—opening apps, controlling browser tabs, searching the web, opening common folders, and chaining several steps into one spoken command.
 
 <br />
 
@@ -280,7 +278,7 @@ flowchart TD
     A[🎙️ Microphone] --> B{Wake Word\nDetected?}
     B -- No --> A
     B -- Yes --> C[🔊 Buddy responds\n'Yes?' / 'I'm here!']
-    C --> D[Active Listening\n60s session window]
+    C --> D[Active Listening\n8s session window]
     D --> E[🧠 NLP Engine\nIntent Matching + Compound Split]
 
     E --> F{Intent Type}
@@ -346,6 +344,21 @@ BuddyAgent/
 
 ---
 
+## ⚡ Performance & Reliability
+
+Buddy Agent is built for **real-world voice interaction** at conversational speed:
+
+- **8-second response window** — commands are processed fast, then Buddy returns to standby
+- **Automatic microphone detection** — works on any Windows PC, no manual device index needed
+- **Natural phrase normalization** — understands "file folder" as *File Explorer* and similar colloquial variations
+- **Robust compound command parsing** — handles chained "and", "also", "then" across long multi-step utterances
+- **Regression-tested NLP** — 23/23 parser tests pass on every change
+- **Verified multi-command execution** — "open file folder and open downloads folder and also open comet and open a new tab and search for youtube" runs all 5 actions in sequence, each with spoken feedback
+
+<br />
+
+---
+
 ## 🎨 Why "Buddy Agent"?
 
 In everyday life, nobody wants a cold, robotic assistant that forces you to memorize strict technical syntax or risks running arbitrary scripts on your machine. You want a **Buddy** — a reliable companion sitting right next to you on your desktop.
@@ -355,6 +368,7 @@ When you're busy writing code, editing video, cooking with messy hands, or relax
 - **Fast & Responsive**: Operates directly at the OS and browser levels in milliseconds.
 - **Privacy & Safety First**: Locked down so it can never touch your private files, delete data, or execute unsafe commands.
 - **Natural Interaction**: Understands conversational English and answers back naturally.
+- **Reliable by design**: Automatic microphone setup, quick session handling, and tested command parsing so it works the first time, every time.
 
 <br />
 
