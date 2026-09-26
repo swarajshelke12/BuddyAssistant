@@ -20,7 +20,7 @@ from modules import file_control
 
 # ── Configuration ────────────────────────────────────────
 WAKE_WORDS = ["hey buddy", "hey hermes", "hey jarvis"]
-SESSION_TIMEOUT = 8.0   # seconds before going back to standby
+SESSION_TIMEOUT = 60.0   # seconds before going back to standby
 
 # ── Conversational Personality ────────────────────────────
 # Buddy speaks like a real person — varied, warm, natural.
@@ -317,6 +317,13 @@ class BuddyAgent:
 
         # ── Route to module, then humanize the response ──────
         ok, raw_msg = False, ""
+
+        # Handle pronoun resolution for close_app
+        if intent == "close_app" and (not target or target.lower() in ["it", "that", "this", "the one"]):
+            if self.context["last_opened"]:
+                target = self.context["last_opened"][-1]  # get the most recent
+            else:
+                return False, "I'm not sure what to close. Please specify."
 
         # Browser
         if intent == "browser_search":
