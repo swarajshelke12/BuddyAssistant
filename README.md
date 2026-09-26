@@ -278,7 +278,7 @@ flowchart TD
     A[🎙️ Microphone] --> B{Wake Word\nDetected?}
     B -- No --> A
     B -- Yes --> C[🔊 Buddy responds\n'Yes?' / 'I'm here!']
-    C --> D[Active Listening\n8s session window]
+    C --> D[Active Listening\n60s session window]
     D --> E[🧠 NLP Engine\nIntent Matching + Compound Split]
 
     E --> F{Intent Type}
